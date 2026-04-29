@@ -46,3 +46,12 @@ Gemma answerfix smoke validated the fix (`ANSWER`/JSON content, larger output bu
 ## Decision
 
 Use the tool for a controlled pilot. The harness result is strong: baseline is near-zero while Lossless/Memory/Combined are near-perfect on gpt-5.4-mini. But before default install, require one production-e2e validation: real session filled with messages → automatic compaction/memory hooks → final questions → report.
+
+
+## Production-path Gemma e2e update
+
+A separate isolated production-path e2e was run with real `openclaw agent` turns, noise turns, `/compact`, then post-compaction control questions.
+
+Result: **6/6 PASS**.
+
+This is stronger evidence than the A/B/C/D harness that OpenClaw+Gemma can preserve exact early facts through real session compaction in an isolated profile. It is still not a long-running main Telegram production soak, but it clears the first production-path gate.

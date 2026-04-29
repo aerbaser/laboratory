@@ -9,9 +9,10 @@
     "openai-codex/gpt-5.4-mini"
   ],
   "validity": [
-    "live-measured",
     "harness-simulated",
-    "not-production-e2e"
+    "live-measured",
+    "not-production-e2e",
+    "production-e2e-isolated"
   ],
   "artifacts": [
     "artifacts/final-comparison-report.md",
@@ -19,6 +20,8 @@
     "artifacts/gemma-full-110-merged.json",
     "artifacts/gemma-full-110-report.md",
     "artifacts/gemma-full-110-rescored-content-thinking.json",
+    "artifacts/gemma-production-e2e-results.json",
+    "artifacts/gemma-production-e2e-summary.md",
     "artifacts/gpt54mini-full-latency.md",
     "artifacts/gpt54mini-full-raw-results.json",
     "artifacts/gpt54mini-full-scoring-summary.md",
@@ -26,5 +29,10 @@
     "artifacts/live-raw-results.json"
   ],
   "finalizedAt": "2026-04-29T12:24:00+01:00",
-  "decision": "pilot/install behind feature flag; require production-e2e before default"
+  "decision": "pilot/install behind feature flag; require production-e2e before default",
+  "productionPathGemmaE2E": {
+    "result": "6/6 PASS",
+    "artifactSummary": "artifacts/gemma-production-e2e-summary.md",
+    "artifactRaw": "artifacts/gemma-production-e2e-results.json"
+  }
 }
