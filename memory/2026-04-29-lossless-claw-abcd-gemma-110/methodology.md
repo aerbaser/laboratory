@@ -35,3 +35,8 @@ Measure whether different context assembly strategies help a live model answer q
 - `artifacts/gemma-full-110-merged.json`
 - `artifacts/gemma-256-partial.json`
 - `artifacts/live-raw-results.json` from resumed 40-probe segment
+
+
+## Final comparison update
+
+Added gpt-5.4-mini full 110 and Gemma answerfix smoke. gpt-5.4-mini is labeled `subagent-live`; Gemma original is diagnostic/rescored; Gemma fixed full rerun was intentionally not started.

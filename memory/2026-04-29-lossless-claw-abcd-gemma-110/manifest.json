@@ -5,16 +5,26 @@
   "slug": "lossless-claw-abcd-gemma-110",
   "sourceRun": "/home/admin/.openclaw/workspace/agent-lab/runs/20260429-083054-lossless-claw-live-abcd",
   "models": [
-    "gemma4-31b"
+    "gemma4-31b",
+    "openai-codex/gpt-5.4-mini"
   ],
   "validity": [
     "live-measured",
-    "harness-simulated"
+    "harness-simulated",
+    "not-production-e2e"
   ],
   "artifacts": [
+    "artifacts/final-comparison-report.md",
     "artifacts/gemma-256-partial.json",
     "artifacts/gemma-full-110-merged.json",
     "artifacts/gemma-full-110-report.md",
+    "artifacts/gemma-full-110-rescored-content-thinking.json",
+    "artifacts/gpt54mini-full-latency.md",
+    "artifacts/gpt54mini-full-raw-results.json",
+    "artifacts/gpt54mini-full-scoring-summary.md",
+    "artifacts/gpt54mini-full-validation-notes.md",
     "artifacts/live-raw-results.json"
-  ]
+  ],
+  "finalizedAt": "2026-04-29T12:24:00+01:00",
+  "decision": "pilot/install behind feature flag; require production-e2e before default"
 }

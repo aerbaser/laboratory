@@ -1,0 +1,6652 @@
+{
+  "startedAt": "2026-04-29T09:47:41.467Z",
+  "completedAt": "2026-04-29T11:15:36Z",
+  "model": "openai-codex/gpt-5.4-mini",
+  "routeLabel": "subagent-live",
+  "ollamaUrl": "http://127.0.0.1:18054 (local OpenAI-compatible proxy to openclaw infer model run)",
+  "stage": "full",
+  "probesPlanned": 110,
+  "probesDone": 110,
+  "contextBudget": 20000,
+  "splitRun": {
+    "firstSegment": "0-69",
+    "secondSegment": "70-109",
+    "reason": "first process received SIGTERM after partial checkpoint at 70/110; resumed remaining 40 and merged without duplicate probeIds"
+  },
+  "results": [
+    {
+      "probeId": "long-0",
+      "category": "long",
+      "question": "What decision_code did we set in this thread?",
+      "idealAnswer": "6288",
+      "modeA": {
+        "ctxTokens": 19817,
+        "content": "unknown",
+        "latencyMs": 6564,
+        "promptTokens": 20088,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 45,
+          "finalContextTokens": 22104,
+          "remainingRawMessages": 32,
+          "summaryCount": 45
+        },
+        "ctxTokens": 20000,
+        "content": "6288",
+        "latencyMs": 7741,
+        "promptTokens": 20168,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19817,
+        "retrieved": 1,
+        "content": "6288",
+        "latencyMs": 5395,
+        "promptTokens": 20113,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 45,
+          "finalContextTokens": 22104,
+          "remainingRawMessages": 32,
+          "summaryCount": 45
+        },
+        "retrieved": 1,
+        "ctxTokens": 20000,
+        "content": "6288",
+        "latencyMs": 7755,
+        "promptTokens": 20170,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "long-1",
+      "category": "long",
+      "question": "What decision_code did we set in this thread?",
+      "idealAnswer": "3671",
+      "modeA": {
+        "ctxTokens": 19818,
+        "content": "6288",
+        "latencyMs": 11831,
+        "promptTokens": 20089,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 41,
+          "finalContextTokens": 22086,
+          "remainingRawMessages": 32,
+          "summaryCount": 41
+        },
+        "ctxTokens": 20000,
+        "content": "3671",
+        "latencyMs": 47861,
+        "promptTokens": 20168,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19818,
+        "retrieved": 1,
+        "content": "3671",
+        "latencyMs": 6516,
+        "promptTokens": 20114,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 41,
+          "finalContextTokens": 22086,
+          "remainingRawMessages": 32,
+          "summaryCount": 41
+        },
+        "retrieved": 1,
+        "ctxTokens": 20000,
+        "content": "3671",
+        "latencyMs": 5434,
+        "promptTokens": 20170,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "long-2",
+      "category": "long",
+      "question": "What decision_code did we set in this thread?",
+      "idealAnswer": "9714",
+      "modeA": {
+        "ctxTokens": 19817,
+        "content": "3671",
+        "latencyMs": 8592,
+        "promptTokens": 20089,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 22,
+          "finalContextTokens": 21990,
+          "remainingRawMessages": 32,
+          "summaryCount": 22
+        },
+        "ctxTokens": 20000,
+        "content": "9714",
+        "latencyMs": 4597,
+        "promptTokens": 20169,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19817,
+        "retrieved": 1,
+        "content": "9714",
+        "latencyMs": 4450,
+        "promptTokens": 20113,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 22,
+          "finalContextTokens": 21990,
+          "remainingRawMessages": 32,
+          "summaryCount": 22
+        },
+        "retrieved": 1,
+        "ctxTokens": 20000,
+        "content": "9714",
+        "latencyMs": 4886,
+        "promptTokens": 20170,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "long-3",
+      "category": "long",
+      "question": "What decision_code did we set in this thread?",
+      "idealAnswer": "3185",
+      "modeA": {
+        "ctxTokens": 19819,
+        "content": "9714",
+        "latencyMs": 6740,
+        "promptTokens": 20091,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 42,
+          "finalContextTokens": 22090,
+          "remainingRawMessages": 32,
+          "summaryCount": 42
+        },
+        "ctxTokens": 20000,
+        "content": "3185",
+        "latencyMs": 6417,
+        "promptTokens": 20169,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19819,
+        "retrieved": 1,
+        "content": "3185",
+        "latencyMs": 25926,
+        "promptTokens": 20114,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 42,
+          "finalContextTokens": 22090,
+          "remainingRawMessages": 32,
+          "summaryCount": 42
+        },
+        "retrieved": 1,
+        "ctxTokens": 20000,
+        "content": "3185",
+        "latencyMs": 7299,
+        "promptTokens": 20170,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "long-4",
+      "category": "long",
+      "question": "What decision_code did we set in this thread?",
+      "idealAnswer": "1202",
+      "modeA": {
+        "ctxTokens": 19818,
+        "content": "unknown",
+        "latencyMs": 9660,
+        "promptTokens": 20089,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 26,
+          "finalContextTokens": 22009,
+          "remainingRawMessages": 32,
+          "summaryCount": 26
+        },
+        "ctxTokens": 20000,
+        "content": "1202",
+        "latencyMs": 5533,
+        "promptTokens": 20169,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19818,
+        "retrieved": 1,
+        "content": "1202",
+        "latencyMs": 4810,
+        "promptTokens": 20114,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 26,
+          "finalContextTokens": 22009,
+          "remainingRawMessages": 32,
+          "summaryCount": 26
+        },
+        "retrieved": 1,
+        "ctxTokens": 20000,
+        "content": "1202",
+        "latencyMs": 4481,
+        "promptTokens": 20170,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "long-5",
+      "category": "long",
+      "question": "What decision_code did we set in this thread?",
+      "idealAnswer": "3615",
+      "modeA": {
+        "ctxTokens": 19821,
+        "content": "1202",
+        "latencyMs": 9474,
+        "promptTokens": 20093,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 37,
+          "finalContextTokens": 22068,
+          "remainingRawMessages": 32,
+          "summaryCount": 37
+        },
+        "ctxTokens": 20000,
+        "content": "3615",
+        "latencyMs": 5537,
+        "promptTokens": 20169,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19821,
+        "retrieved": 1,
+        "content": "3615",
+        "latencyMs": 5973,
+        "promptTokens": 20117,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 37,
+          "finalContextTokens": 22068,
+          "remainingRawMessages": 32,
+          "summaryCount": 37
+        },
+        "retrieved": 1,
+        "ctxTokens": 20000,
+        "content": "3615",
+        "latencyMs": 32848,
+        "promptTokens": 20170,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "long-6",
+      "category": "long",
+      "question": "What decision_code did we set in this thread?",
+      "idealAnswer": "8368",
+      "modeA": {
+        "ctxTokens": 19822,
+        "content": "3615",
+        "latencyMs": 15254,
+        "promptTokens": 20093,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 39,
+          "finalContextTokens": 22080,
+          "remainingRawMessages": 32,
+          "summaryCount": 39
+        },
+        "ctxTokens": 20000,
+        "content": "8368",
+        "latencyMs": 6217,
+        "promptTokens": 20169,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19822,
+        "retrieved": 1,
+        "content": "8368",
+        "latencyMs": 8119,
+        "promptTokens": 20118,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 39,
+          "finalContextTokens": 22080,
+          "remainingRawMessages": 32,
+          "summaryCount": 39
+        },
+        "retrieved": 1,
+        "ctxTokens": 20000,
+        "content": "8368",
+        "latencyMs": 4538,
+        "promptTokens": 20170,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "long-7",
+      "category": "long",
+      "question": "What decision_code did we set in this thread?",
+      "idealAnswer": "1023",
+      "modeA": {
+        "ctxTokens": 19818,
+        "content": "8368",
+        "latencyMs": 7414,
+        "promptTokens": 20090,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 40,
+          "finalContextTokens": 22079,
+          "remainingRawMessages": 32,
+          "summaryCount": 40
+        },
+        "ctxTokens": 20000,
+        "content": "1023",
+        "latencyMs": 6702,
+        "promptTokens": 20169,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19818,
+        "retrieved": 1,
+        "content": "1023",
+        "latencyMs": 5106,
+        "promptTokens": 20114,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 40,
+          "finalContextTokens": 22079,
+          "remainingRawMessages": 32,
+          "summaryCount": 40
+        },
+        "retrieved": 1,
+        "ctxTokens": 20000,
+        "content": "1023",
+        "latencyMs": 9367,
+        "promptTokens": 20170,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "long-8",
+      "category": "long",
+      "question": "What decision_code did we set in this thread?",
+      "idealAnswer": "9971",
+      "modeA": {
+        "ctxTokens": 19816,
+        "content": "unknown",
+        "latencyMs": 28707,
+        "promptTokens": 20090,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 22,
+          "finalContextTokens": 21988,
+          "remainingRawMessages": 32,
+          "summaryCount": 22
+        },
+        "ctxTokens": 20000,
+        "content": "9971",
+        "latencyMs": 5123,
+        "promptTokens": 20169,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19816,
+        "retrieved": 1,
+        "content": "9971",
+        "latencyMs": 4921,
+        "promptTokens": 20114,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 22,
+          "finalContextTokens": 21988,
+          "remainingRawMessages": 32,
+          "summaryCount": 22
+        },
+        "retrieved": 1,
+        "ctxTokens": 20000,
+        "content": "9971",
+        "latencyMs": 4239,
+        "promptTokens": 20170,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "long-9",
+      "category": "long",
+      "question": "What decision_code did we set in this thread?",
+      "idealAnswer": "6883",
+      "modeA": {
+        "ctxTokens": 19817,
+        "content": "unknown",
+        "latencyMs": 5100,
+        "promptTokens": 20091,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 24,
+          "finalContextTokens": 22000,
+          "remainingRawMessages": 32,
+          "summaryCount": 24
+        },
+        "ctxTokens": 20000,
+        "content": "6883",
+        "latencyMs": 6403,
+        "promptTokens": 20169,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19817,
+        "retrieved": 1,
+        "content": "6883",
+        "latencyMs": 6211,
+        "promptTokens": 20116,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 24,
+          "finalContextTokens": 22000,
+          "remainingRawMessages": 32,
+          "summaryCount": 24
+        },
+        "retrieved": 1,
+        "ctxTokens": 20000,
+        "content": "6883",
+        "latencyMs": 4824,
+        "promptTokens": 20170,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "long-10",
+      "category": "long",
+      "question": "What decision_code did we set in this thread?",
+      "idealAnswer": "5865",
+      "modeA": {
+        "ctxTokens": 19817,
+        "content": "6883",
+        "latencyMs": 9296,
+        "promptTokens": 20090,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 36,
+          "finalContextTokens": 22058,
+          "remainingRawMessages": 32,
+          "summaryCount": 36
+        },
+        "ctxTokens": 20000,
+        "content": "5865",
+        "latencyMs": 44468,
+        "promptTokens": 20169,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19817,
+        "retrieved": 1,
+        "content": "5865",
+        "latencyMs": 16864,
+        "promptTokens": 20115,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 36,
+          "finalContextTokens": 22058,
+          "remainingRawMessages": 32,
+          "summaryCount": 36
+        },
+        "retrieved": 1,
+        "ctxTokens": 20000,
+        "content": "5865",
+        "latencyMs": 10367,
+        "promptTokens": 20170,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "long-11",
+      "category": "long",
+      "question": "What decision_code did we set in this thread?",
+      "idealAnswer": "1843",
+      "modeA": {
+        "ctxTokens": 19820,
+        "content": "5865",
+        "latencyMs": 11132,
+        "promptTokens": 20091,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 45,
+          "finalContextTokens": 22107,
+          "remainingRawMessages": 32,
+          "summaryCount": 45
+        },
+        "ctxTokens": 20000,
+        "content": "1843",
+        "latencyMs": 6339,
+        "promptTokens": 20169,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19820,
+        "retrieved": 1,
+        "content": "1843",
+        "latencyMs": 5072,
+        "promptTokens": 20116,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 45,
+          "finalContextTokens": 22107,
+          "remainingRawMessages": 32,
+          "summaryCount": 45
+        },
+        "retrieved": 1,
+        "ctxTokens": 20000,
+        "content": "1843",
+        "latencyMs": 5071,
+        "promptTokens": 20170,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "long-12",
+      "category": "long",
+      "question": "What decision_code did we set in this thread?",
+      "idealAnswer": "7043",
+      "modeA": {
+        "ctxTokens": 19814,
+        "content": "unknown",
+        "latencyMs": 16785,
+        "promptTokens": 20084,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 33,
+          "finalContextTokens": 22040,
+          "remainingRawMessages": 32,
+          "summaryCount": 33
+        },
+        "ctxTokens": 20000,
+        "content": "7043",
+        "latencyMs": 5097,
+        "promptTokens": 20168,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19814,
+        "retrieved": 1,
+        "content": "7043",
+        "latencyMs": 31978,
+        "promptTokens": 20109,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 33,
+          "finalContextTokens": 22040,
+          "remainingRawMessages": 32,
+          "summaryCount": 33
+        },
+        "retrieved": 1,
+        "ctxTokens": 20000,
+        "content": "7043",
+        "latencyMs": 7477,
+        "promptTokens": 20170,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "long-13",
+      "category": "long",
+      "question": "What decision_code did we set in this thread?",
+      "idealAnswer": "4937",
+      "modeA": {
+        "ctxTokens": 19820,
+        "content": "7043",
+        "latencyMs": 5648,
+        "promptTokens": 20091,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 37,
+          "finalContextTokens": 22067,
+          "remainingRawMessages": 32,
+          "summaryCount": 37
+        },
+        "ctxTokens": 20000,
+        "content": "4937",
+        "latencyMs": 5011,
+        "promptTokens": 20169,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19820,
+        "retrieved": 1,
+        "content": "4937",
+        "latencyMs": 6195,
+        "promptTokens": 20115,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 37,
+          "finalContextTokens": 22067,
+          "remainingRawMessages": 32,
+          "summaryCount": 37
+        },
+        "retrieved": 1,
+        "ctxTokens": 20000,
+        "content": "4937",
+        "latencyMs": 7401,
+        "promptTokens": 20170,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "long-14",
+      "category": "long",
+      "question": "What decision_code did we set in this thread?",
+      "idealAnswer": "6048",
+      "modeA": {
+        "ctxTokens": 19820,
+        "content": "4937",
+        "latencyMs": 10431,
+        "promptTokens": 20094,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 35,
+          "finalContextTokens": 22058,
+          "remainingRawMessages": 32,
+          "summaryCount": 35
+        },
+        "ctxTokens": 20000,
+        "content": "6048",
+        "latencyMs": 4828,
+        "promptTokens": 20169,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19820,
+        "retrieved": 1,
+        "content": "6048",
+        "latencyMs": 6541,
+        "promptTokens": 20119,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 35,
+          "finalContextTokens": 22058,
+          "remainingRawMessages": 32,
+          "summaryCount": 35
+        },
+        "retrieved": 1,
+        "ctxTokens": 20000,
+        "content": "6048",
+        "latencyMs": 39713,
+        "promptTokens": 20170,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "long-15",
+      "category": "long",
+      "question": "What decision_code did we set in this thread?",
+      "idealAnswer": "2290",
+      "modeA": {
+        "ctxTokens": 19819,
+        "content": "6048",
+        "latencyMs": 8833,
+        "promptTokens": 20090,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 25,
+          "finalContextTokens": 22006,
+          "remainingRawMessages": 32,
+          "summaryCount": 25
+        },
+        "ctxTokens": 20000,
+        "content": "2290",
+        "latencyMs": 6626,
+        "promptTokens": 20169,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19819,
+        "retrieved": 1,
+        "content": "2290",
+        "latencyMs": 5681,
+        "promptTokens": 20115,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 25,
+          "finalContextTokens": 22006,
+          "remainingRawMessages": 32,
+          "summaryCount": 25
+        },
+        "retrieved": 1,
+        "ctxTokens": 20000,
+        "content": "2290",
+        "latencyMs": 7519,
+        "promptTokens": 20170,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "long-16",
+      "category": "long",
+      "question": "What decision_code did we set in this thread?",
+      "idealAnswer": "7894",
+      "modeA": {
+        "ctxTokens": 19812,
+        "content": "2290",
+        "latencyMs": 5245,
+        "promptTokens": 20087,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 39,
+          "finalContextTokens": 22068,
+          "remainingRawMessages": 32,
+          "summaryCount": 39
+        },
+        "ctxTokens": 20000,
+        "content": "7894",
+        "latencyMs": 9687,
+        "promptTokens": 20169,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19812,
+        "retrieved": 1,
+        "content": "7894",
+        "latencyMs": 6155,
+        "promptTokens": 20112,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 39,
+          "finalContextTokens": 22068,
+          "remainingRawMessages": 32,
+          "summaryCount": 39
+        },
+        "retrieved": 1,
+        "ctxTokens": 20000,
+        "content": "7894",
+        "latencyMs": 7770,
+        "promptTokens": 20170,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "long-17",
+      "category": "long",
+      "question": "What decision_code did we set in this thread?",
+      "idealAnswer": "3354",
+      "modeA": {
+        "ctxTokens": 19820,
+        "content": "6048",
+        "latencyMs": 29328,
+        "promptTokens": 20092,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 45,
+          "finalContextTokens": 22107,
+          "remainingRawMessages": 32,
+          "summaryCount": 45
+        },
+        "ctxTokens": 20000,
+        "content": "3354",
+        "latencyMs": 8631,
+        "promptTokens": 20168,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19820,
+        "retrieved": 1,
+        "content": "3354",
+        "latencyMs": 7984,
+        "promptTokens": 20117,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 45,
+          "finalContextTokens": 22107,
+          "remainingRawMessages": 32,
+          "summaryCount": 45
+        },
+        "retrieved": 1,
+        "ctxTokens": 20000,
+        "content": "3354",
+        "latencyMs": 6332,
+        "promptTokens": 20170,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "long-18",
+      "category": "long",
+      "question": "What decision_code did we set in this thread?",
+      "idealAnswer": "6545",
+      "modeA": {
+        "ctxTokens": 19816,
+        "content": "3354",
+        "latencyMs": 7991,
+        "promptTokens": 20089,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 31,
+          "finalContextTokens": 22034,
+          "remainingRawMessages": 32,
+          "summaryCount": 31
+        },
+        "ctxTokens": 20000,
+        "content": "6545",
+        "latencyMs": 5884,
+        "promptTokens": 20169,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19816,
+        "retrieved": 1,
+        "content": "6545",
+        "latencyMs": 7461,
+        "promptTokens": 20115,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 31,
+          "finalContextTokens": 22034,
+          "remainingRawMessages": 32,
+          "summaryCount": 31
+        },
+        "retrieved": 1,
+        "ctxTokens": 19999,
+        "content": "6545",
+        "latencyMs": 6374,
+        "promptTokens": 20169,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "long-19",
+      "category": "long",
+      "question": "What decision_code did we set in this thread?",
+      "idealAnswer": "3318",
+      "modeA": {
+        "ctxTokens": 19818,
+        "content": "6545",
+        "latencyMs": 10922,
+        "promptTokens": 20087,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 23,
+          "finalContextTokens": 21995,
+          "remainingRawMessages": 32,
+          "summaryCount": 23
+        },
+        "ctxTokens": 20000,
+        "content": "3318",
+        "latencyMs": 35998,
+        "promptTokens": 20169,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19818,
+        "retrieved": 1,
+        "content": "3318",
+        "latencyMs": 10646,
+        "promptTokens": 20112,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 23,
+          "finalContextTokens": 21995,
+          "remainingRawMessages": 32,
+          "summaryCount": 23
+        },
+        "retrieved": 1,
+        "ctxTokens": 20000,
+        "content": "3318",
+        "latencyMs": 5391,
+        "promptTokens": 20170,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "long-20",
+      "category": "long",
+      "question": "What decision_code did we set in this thread?",
+      "idealAnswer": "5141",
+      "modeA": {
+        "ctxTokens": 19815,
+        "content": "3318",
+        "latencyMs": 10630,
+        "promptTokens": 20088,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 21,
+          "finalContextTokens": 21983,
+          "remainingRawMessages": 32,
+          "summaryCount": 21
+        },
+        "ctxTokens": 20000,
+        "content": "5141",
+        "latencyMs": 7699,
+        "promptTokens": 20168,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19815,
+        "retrieved": 1,
+        "content": "5141",
+        "latencyMs": 6517,
+        "promptTokens": 20114,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 21,
+          "finalContextTokens": 21983,
+          "remainingRawMessages": 32,
+          "summaryCount": 21
+        },
+        "retrieved": 1,
+        "ctxTokens": 20000,
+        "content": "5141",
+        "latencyMs": 8657,
+        "promptTokens": 20170,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "long-21",
+      "category": "long",
+      "question": "What decision_code did we set in this thread?",
+      "idealAnswer": "5247",
+      "modeA": {
+        "ctxTokens": 19821,
+        "content": "5141",
+        "latencyMs": 6414,
+        "promptTokens": 20095,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 26,
+          "finalContextTokens": 22012,
+          "remainingRawMessages": 32,
+          "summaryCount": 26
+        },
+        "ctxTokens": 20000,
+        "content": "5247",
+        "latencyMs": 6617,
+        "promptTokens": 20169,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19821,
+        "retrieved": 1,
+        "content": "5247",
+        "latencyMs": 35875,
+        "promptTokens": 20119,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 26,
+          "finalContextTokens": 22012,
+          "remainingRawMessages": 32,
+          "summaryCount": 26
+        },
+        "retrieved": 1,
+        "ctxTokens": 20000,
+        "content": "5247",
+        "latencyMs": 6278,
+        "promptTokens": 20170,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "long-22",
+      "category": "long",
+      "question": "What decision_code did we set in this thread?",
+      "idealAnswer": "5846",
+      "modeA": {
+        "ctxTokens": 19820,
+        "content": "5247",
+        "latencyMs": 4471,
+        "promptTokens": 20090,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 30,
+          "finalContextTokens": 22032,
+          "remainingRawMessages": 32,
+          "summaryCount": 30
+        },
+        "ctxTokens": 20000,
+        "content": "5846",
+        "latencyMs": 5595,
+        "promptTokens": 20169,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19820,
+        "retrieved": 1,
+        "content": "5846",
+        "latencyMs": 8722,
+        "promptTokens": 20114,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 30,
+          "finalContextTokens": 22032,
+          "remainingRawMessages": 32,
+          "summaryCount": 30
+        },
+        "retrieved": 1,
+        "ctxTokens": 20000,
+        "content": "5846",
+        "latencyMs": 12078,
+        "promptTokens": 20170,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "long-23",
+      "category": "long",
+      "question": "What decision_code did we set in this thread?",
+      "idealAnswer": "3501",
+      "modeA": {
+        "ctxTokens": 19817,
+        "content": "5846",
+        "latencyMs": 7004,
+        "promptTokens": 20089,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 37,
+          "finalContextTokens": 22064,
+          "remainingRawMessages": 32,
+          "summaryCount": 37
+        },
+        "ctxTokens": 20000,
+        "content": "3501",
+        "latencyMs": 4970,
+        "promptTokens": 20168,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19817,
+        "retrieved": 1,
+        "content": "3501",
+        "latencyMs": 5999,
+        "promptTokens": 20115,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 37,
+          "finalContextTokens": 22064,
+          "remainingRawMessages": 32,
+          "summaryCount": 37
+        },
+        "retrieved": 1,
+        "ctxTokens": 20000,
+        "content": "3501",
+        "latencyMs": 30171,
+        "promptTokens": 20170,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "long-24",
+      "category": "long",
+      "question": "What decision_code did we set in this thread?",
+      "idealAnswer": "7525",
+      "modeA": {
+        "ctxTokens": 19818,
+        "content": "3501",
+        "latencyMs": 18423,
+        "promptTokens": 20090,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 39,
+          "finalContextTokens": 22078,
+          "remainingRawMessages": 32,
+          "summaryCount": 39
+        },
+        "ctxTokens": 20000,
+        "content": "7525",
+        "latencyMs": 5030,
+        "promptTokens": 20169,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19818,
+        "retrieved": 1,
+        "content": "7525",
+        "latencyMs": 6697,
+        "promptTokens": 20116,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 39,
+          "finalContextTokens": 22078,
+          "remainingRawMessages": 32,
+          "summaryCount": 39
+        },
+        "retrieved": 1,
+        "ctxTokens": 19999,
+        "content": "7525",
+        "latencyMs": 5984,
+        "promptTokens": 20169,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "conflict-25",
+      "category": "conflict",
+      "question": "What is the current release_target?",
+      "idealAnswer": "6295",
+      "staleLeak": "3597",
+      "modeA": {
+        "ctxTokens": 19814,
+        "content": "unknown",
+        "latencyMs": 7672,
+        "promptTokens": 20085,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 34,
+          "finalContextTokens": 22054,
+          "remainingRawMessages": 32,
+          "summaryCount": 34
+        },
+        "ctxTokens": 20000,
+        "content": "6295",
+        "latencyMs": 8492,
+        "promptTokens": 20166,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19814,
+        "retrieved": 2,
+        "content": "6295",
+        "latencyMs": 7712,
+        "promptTokens": 20120,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 34,
+          "finalContextTokens": 22054,
+          "remainingRawMessages": 32,
+          "summaryCount": 34
+        },
+        "retrieved": 2,
+        "ctxTokens": 20000,
+        "content": "6295",
+        "latencyMs": 5832,
+        "promptTokens": 20167,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "conflict-26",
+      "category": "conflict",
+      "question": "What is the current release_target?",
+      "idealAnswer": "5080",
+      "staleLeak": "2187",
+      "modeA": {
+        "ctxTokens": 19822,
+        "content": "6295",
+        "latencyMs": 39213,
+        "promptTokens": 20090,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 42,
+          "finalContextTokens": 22102,
+          "remainingRawMessages": 32,
+          "summaryCount": 42
+        },
+        "ctxTokens": 20000,
+        "content": "5080",
+        "latencyMs": 8633,
+        "promptTokens": 20166,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19822,
+        "retrieved": 2,
+        "content": "5080",
+        "latencyMs": 14173,
+        "promptTokens": 20125,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 42,
+          "finalContextTokens": 22102,
+          "remainingRawMessages": 32,
+          "summaryCount": 42
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "5080",
+        "latencyMs": 6557,
+        "promptTokens": 20167,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "conflict-27",
+      "category": "conflict",
+      "question": "What is the current release_target?",
+      "idealAnswer": "7973",
+      "staleLeak": "4776",
+      "modeA": {
+        "ctxTokens": 19811,
+        "content": "5080",
+        "latencyMs": 13912,
+        "promptTokens": 20080,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 37,
+          "finalContextTokens": 22066,
+          "remainingRawMessages": 32,
+          "summaryCount": 37
+        },
+        "ctxTokens": 20000,
+        "content": "7973",
+        "latencyMs": 5789,
+        "promptTokens": 20166,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19811,
+        "retrieved": 2,
+        "content": "7973",
+        "latencyMs": 8613,
+        "promptTokens": 20115,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 37,
+          "finalContextTokens": 22066,
+          "remainingRawMessages": 32,
+          "summaryCount": 37
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "7973",
+        "latencyMs": 7082,
+        "promptTokens": 20167,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "conflict-28",
+      "category": "conflict",
+      "question": "What is the current release_target?",
+      "idealAnswer": "4772",
+      "staleLeak": "1274",
+      "modeA": {
+        "ctxTokens": 19819,
+        "content": "7973",
+        "latencyMs": 8144,
+        "promptTokens": 20090,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 34,
+          "finalContextTokens": 22059,
+          "remainingRawMessages": 32,
+          "summaryCount": 34
+        },
+        "ctxTokens": 20000,
+        "content": "4772",
+        "latencyMs": 34218,
+        "promptTokens": 20166,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19819,
+        "retrieved": 2,
+        "content": "4772",
+        "latencyMs": 31397,
+        "promptTokens": 20125,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 34,
+          "finalContextTokens": 22059,
+          "remainingRawMessages": 32,
+          "summaryCount": 34
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "4772",
+        "latencyMs": 6829,
+        "promptTokens": 20167,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "conflict-29",
+      "category": "conflict",
+      "question": "What is the current release_target?",
+      "idealAnswer": "5102",
+      "staleLeak": "1411",
+      "modeA": {
+        "ctxTokens": 19819,
+        "content": "4772",
+        "latencyMs": 8399,
+        "promptTokens": 20089,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 29,
+          "finalContextTokens": 22035,
+          "remainingRawMessages": 32,
+          "summaryCount": 29
+        },
+        "ctxTokens": 20000,
+        "content": "5102",
+        "latencyMs": 7660,
+        "promptTokens": 20166,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19819,
+        "retrieved": 2,
+        "content": "5102",
+        "latencyMs": 5114,
+        "promptTokens": 20124,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 29,
+          "finalContextTokens": 22035,
+          "remainingRawMessages": 32,
+          "summaryCount": 29
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "5102",
+        "latencyMs": 5927,
+        "promptTokens": 20167,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "conflict-30",
+      "category": "conflict",
+      "question": "What is the current release_target?",
+      "idealAnswer": "5607",
+      "staleLeak": "2048",
+      "modeA": {
+        "ctxTokens": 19813,
+        "content": "5102",
+        "latencyMs": 9908,
+        "promptTokens": 20084,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 45,
+          "finalContextTokens": 22109,
+          "remainingRawMessages": 32,
+          "summaryCount": 45
+        },
+        "ctxTokens": 20000,
+        "content": "5607",
+        "latencyMs": 9988,
+        "promptTokens": 20166,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19813,
+        "retrieved": 2,
+        "content": "5607",
+        "latencyMs": 29972,
+        "promptTokens": 20118,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 45,
+          "finalContextTokens": 22109,
+          "remainingRawMessages": 32,
+          "summaryCount": 45
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "5607",
+        "latencyMs": 25380,
+        "promptTokens": 20167,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "conflict-31",
+      "category": "conflict",
+      "question": "What is the current release_target?",
+      "idealAnswer": "4929",
+      "staleLeak": "3150",
+      "modeA": {
+        "ctxTokens": 19815,
+        "content": "unknown",
+        "latencyMs": 7366,
+        "promptTokens": 20083,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 29,
+          "finalContextTokens": 22030,
+          "remainingRawMessages": 32,
+          "summaryCount": 29
+        },
+        "ctxTokens": 20000,
+        "content": "4929",
+        "latencyMs": 7410,
+        "promptTokens": 20166,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19815,
+        "retrieved": 2,
+        "content": "4929",
+        "latencyMs": 7381,
+        "promptTokens": 20118,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 29,
+          "finalContextTokens": 22030,
+          "remainingRawMessages": 32,
+          "summaryCount": 29
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "4929",
+        "latencyMs": 6759,
+        "promptTokens": 20167,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "conflict-32",
+      "category": "conflict",
+      "question": "What is the current release_target?",
+      "idealAnswer": "2604",
+      "staleLeak": "1443",
+      "modeA": {
+        "ctxTokens": 19814,
+        "content": "unknown",
+        "latencyMs": 6302,
+        "promptTokens": 20083,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 40,
+          "finalContextTokens": 22083,
+          "remainingRawMessages": 32,
+          "summaryCount": 40
+        },
+        "ctxTokens": 20000,
+        "content": "2604",
+        "latencyMs": 8822,
+        "promptTokens": 20166,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19814,
+        "retrieved": 2,
+        "content": "2604",
+        "latencyMs": 6871,
+        "promptTokens": 20118,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 40,
+          "finalContextTokens": 22083,
+          "remainingRawMessages": 32,
+          "summaryCount": 40
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "2604",
+        "latencyMs": 34858,
+        "promptTokens": 20167,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "conflict-33",
+      "category": "conflict",
+      "question": "What is the current release_target?",
+      "idealAnswer": "7522",
+      "staleLeak": "4624",
+      "modeA": {
+        "ctxTokens": 19816,
+        "content": "2604",
+        "latencyMs": 5495,
+        "promptTokens": 20087,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 27,
+          "finalContextTokens": 22021,
+          "remainingRawMessages": 32,
+          "summaryCount": 27
+        },
+        "ctxTokens": 20000,
+        "content": "7522",
+        "latencyMs": 13689,
+        "promptTokens": 20166,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19816,
+        "retrieved": 2,
+        "content": "7522",
+        "latencyMs": 8278,
+        "promptTokens": 20122,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 27,
+          "finalContextTokens": 22021,
+          "remainingRawMessages": 32,
+          "summaryCount": 27
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "7522",
+        "latencyMs": 14032,
+        "promptTokens": 20167,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "conflict-34",
+      "category": "conflict",
+      "question": "What is the current release_target?",
+      "idealAnswer": "5277",
+      "staleLeak": "2414",
+      "modeA": {
+        "ctxTokens": 19820,
+        "content": "unknown",
+        "latencyMs": 9396,
+        "promptTokens": 20088,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 43,
+          "finalContextTokens": 22106,
+          "remainingRawMessages": 32,
+          "summaryCount": 43
+        },
+        "ctxTokens": 20000,
+        "content": "5277",
+        "latencyMs": 8663,
+        "promptTokens": 20166,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19820,
+        "retrieved": 2,
+        "content": "5277",
+        "latencyMs": 6027,
+        "promptTokens": 20123,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 43,
+          "finalContextTokens": 22106,
+          "remainingRawMessages": 32,
+          "summaryCount": 43
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "5277",
+        "latencyMs": 5985,
+        "promptTokens": 20167,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "conflict-35",
+      "category": "conflict",
+      "question": "What is the current release_target?",
+      "idealAnswer": "6594",
+      "staleLeak": "4711",
+      "modeA": {
+        "ctxTokens": 19815,
+        "content": "2604",
+        "latencyMs": 46355,
+        "promptTokens": 20085,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 40,
+          "finalContextTokens": 22084,
+          "remainingRawMessages": 32,
+          "summaryCount": 40
+        },
+        "ctxTokens": 20000,
+        "content": "",
+        "latencyMs": 19892,
+        "error": "HTTP 500: {\"error\":\"Command failed: openclaw infer model run --gateway --model openai-codex/gpt-5.4-mini --prompt SYSTEM:\\nYou are a precise question-answering assistant. Answer using ONLY the information present in the conversation context. Reply with a JSON object: {\\\"answer\\\": <string>}. Output the requested value verbatim in the answer field — no extra commentary, no labels, no preamble. If the context ",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19815,
+        "retrieved": 2,
+        "content": "6594",
+        "latencyMs": 6039,
+        "promptTokens": 20119,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 40,
+          "finalContextTokens": 22084,
+          "remainingRawMessages": 32,
+          "summaryCount": 40
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "6594",
+        "latencyMs": 5498,
+        "promptTokens": 20167,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "conflict-36",
+      "category": "conflict",
+      "question": "What is the current release_target?",
+      "idealAnswer": "7357",
+      "staleLeak": "4460",
+      "modeA": {
+        "ctxTokens": 19822,
+        "content": "6594",
+        "latencyMs": 20517,
+        "promptTokens": 20090,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 36,
+          "finalContextTokens": 22070,
+          "remainingRawMessages": 32,
+          "summaryCount": 36
+        },
+        "ctxTokens": 20000,
+        "content": "7357",
+        "latencyMs": 7016,
+        "promptTokens": 20166,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19822,
+        "retrieved": 2,
+        "content": "7357",
+        "latencyMs": 9750,
+        "promptTokens": 20125,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 36,
+          "finalContextTokens": 22070,
+          "remainingRawMessages": 32,
+          "summaryCount": 36
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "7357",
+        "latencyMs": 6326,
+        "promptTokens": 20167,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "conflict-37",
+      "category": "conflict",
+      "question": "What is the current release_target?",
+      "idealAnswer": "3263",
+      "staleLeak": "1581",
+      "modeA": {
+        "ctxTokens": 19818,
+        "content": "7357",
+        "latencyMs": 17999,
+        "promptTokens": 20089,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 35,
+          "finalContextTokens": 22064,
+          "remainingRawMessages": 32,
+          "summaryCount": 35
+        },
+        "ctxTokens": 20000,
+        "content": "3263",
+        "latencyMs": 6327,
+        "promptTokens": 20166,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19818,
+        "retrieved": 2,
+        "content": "3263",
+        "latencyMs": 34429,
+        "promptTokens": 20123,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 35,
+          "finalContextTokens": 22064,
+          "remainingRawMessages": 32,
+          "summaryCount": 35
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "3263",
+        "latencyMs": 7194,
+        "promptTokens": 20167,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "conflict-38",
+      "category": "conflict",
+      "question": "What is the current release_target?",
+      "idealAnswer": "5786",
+      "staleLeak": "2829",
+      "modeA": {
+        "ctxTokens": 19820,
+        "content": "unknown",
+        "latencyMs": 8077,
+        "promptTokens": 20088,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 43,
+          "finalContextTokens": 22104,
+          "remainingRawMessages": 32,
+          "summaryCount": 43
+        },
+        "ctxTokens": 20000,
+        "content": "5786",
+        "latencyMs": 9632,
+        "promptTokens": 20166,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19820,
+        "retrieved": 2,
+        "content": "5786",
+        "latencyMs": 6120,
+        "promptTokens": 20122,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 43,
+          "finalContextTokens": 22104,
+          "remainingRawMessages": 32,
+          "summaryCount": 43
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "5786",
+        "latencyMs": 5133,
+        "promptTokens": 20167,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "conflict-39",
+      "category": "conflict",
+      "question": "What is the current release_target?",
+      "idealAnswer": "3128",
+      "staleLeak": "1503",
+      "modeA": {
+        "ctxTokens": 19812,
+        "content": "5786",
+        "latencyMs": 22620,
+        "promptTokens": 20080,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 37,
+          "finalContextTokens": 22066,
+          "remainingRawMessages": 32,
+          "summaryCount": 37
+        },
+        "ctxTokens": 20000,
+        "content": "3128",
+        "latencyMs": 5990,
+        "promptTokens": 20166,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19812,
+        "retrieved": 2,
+        "content": "3128",
+        "latencyMs": 8461,
+        "promptTokens": 20115,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 37,
+          "finalContextTokens": 22066,
+          "remainingRawMessages": 32,
+          "summaryCount": 37
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "3128",
+        "latencyMs": 33894,
+        "promptTokens": 20167,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "stale-40",
+      "category": "stale",
+      "question": "Who is the user's current employer?",
+      "idealAnswer": "Clearbird",
+      "staleLeak": "Marshfield",
+      "modeA": {
+        "ctxTokens": 19821,
+        "content": "unknown",
+        "latencyMs": 10872,
+        "promptTokens": 20089,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 32,
+          "finalContextTokens": 22055,
+          "remainingRawMessages": 32,
+          "summaryCount": 32
+        },
+        "ctxTokens": 20000,
+        "content": "Clearbird",
+        "latencyMs": 8164,
+        "promptTokens": 20167,
+        "completionTokens": 6,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19821,
+        "retrieved": 2,
+        "content": "Clearbird",
+        "latencyMs": 9454,
+        "promptTokens": 20126,
+        "completionTokens": 6,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 32,
+          "finalContextTokens": 22055,
+          "remainingRawMessages": 32,
+          "summaryCount": 32
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "Clearbird",
+        "latencyMs": 5937,
+        "promptTokens": 20167,
+        "completionTokens": 6,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "stale-41",
+      "category": "stale",
+      "question": "Who is the user's current employer?",
+      "idealAnswer": "Brighton-7",
+      "staleLeak": "Halcyon",
+      "modeA": {
+        "ctxTokens": 19817,
+        "content": "Clearbird",
+        "latencyMs": 6443,
+        "promptTokens": 20086,
+        "completionTokens": 6,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 31,
+          "finalContextTokens": 22045,
+          "remainingRawMessages": 32,
+          "summaryCount": 31
+        },
+        "ctxTokens": 20000,
+        "content": "Brighton-7",
+        "latencyMs": 5772,
+        "promptTokens": 20166,
+        "completionTokens": 6,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19817,
+        "retrieved": 2,
+        "content": "Brighton-7",
+        "latencyMs": 6415,
+        "promptTokens": 20123,
+        "completionTokens": 6,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 31,
+          "finalContextTokens": 22045,
+          "remainingRawMessages": 32,
+          "summaryCount": 31
+        },
+        "retrieved": 2,
+        "ctxTokens": 20000,
+        "content": "Brighton-7",
+        "latencyMs": 5103,
+        "promptTokens": 20167,
+        "completionTokens": 6,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "stale-42",
+      "category": "stale",
+      "question": "Who is the user's current employer?",
+      "idealAnswer": "Clearbird",
+      "staleLeak": "Halcyon",
+      "modeA": {
+        "ctxTokens": 19820,
+        "content": "Brighton-7",
+        "latencyMs": 41440,
+        "promptTokens": 20089,
+        "completionTokens": 6,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 43,
+          "finalContextTokens": 22105,
+          "remainingRawMessages": 32,
+          "summaryCount": 43
+        },
+        "ctxTokens": 20000,
+        "content": "Clearbird",
+        "latencyMs": 5021,
+        "promptTokens": 20166,
+        "completionTokens": 6,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19820,
+        "retrieved": 2,
+        "content": "Clearbird",
+        "latencyMs": 5756,
+        "promptTokens": 20125,
+        "completionTokens": 6,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 43,
+          "finalContextTokens": 22105,
+          "remainingRawMessages": 32,
+          "summaryCount": 43
+        },
+        "retrieved": 2,
+        "ctxTokens": 20000,
+        "content": "Clearbird",
+        "latencyMs": 8330,
+        "promptTokens": 20167,
+        "completionTokens": 6,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "stale-43",
+      "category": "stale",
+      "question": "Who is the user's current employer?",
+      "idealAnswer": "Brighton-7",
+      "staleLeak": "Halcyon",
+      "modeA": {
+        "ctxTokens": 19817,
+        "content": "Clearbird",
+        "latencyMs": 7302,
+        "promptTokens": 20086,
+        "completionTokens": 6,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 38,
+          "finalContextTokens": 22078,
+          "remainingRawMessages": 32,
+          "summaryCount": 38
+        },
+        "ctxTokens": 20000,
+        "content": "Brighton-7",
+        "latencyMs": 5966,
+        "promptTokens": 20166,
+        "completionTokens": 6,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19817,
+        "retrieved": 2,
+        "content": "Brighton-7",
+        "latencyMs": 5313,
+        "promptTokens": 20123,
+        "completionTokens": 6,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 38,
+          "finalContextTokens": 22078,
+          "remainingRawMessages": 32,
+          "summaryCount": 38
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "Brighton-7",
+        "latencyMs": 6592,
+        "promptTokens": 20167,
+        "completionTokens": 6,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "stale-44",
+      "category": "stale",
+      "question": "Who is the user's current employer?",
+      "idealAnswer": "Greylab",
+      "staleLeak": "Clearbird",
+      "modeA": {
+        "ctxTokens": 19820,
+        "content": "Brighton-7",
+        "latencyMs": 6034,
+        "promptTokens": 20087,
+        "completionTokens": 6,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 24,
+          "finalContextTokens": 22010,
+          "remainingRawMessages": 32,
+          "summaryCount": 24
+        },
+        "ctxTokens": 20000,
+        "content": "Greylab",
+        "latencyMs": 38299,
+        "promptTokens": 20166,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19820,
+        "retrieved": 2,
+        "content": "Greylab",
+        "latencyMs": 9709,
+        "promptTokens": 20124,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 24,
+          "finalContextTokens": 22010,
+          "remainingRawMessages": 32,
+          "summaryCount": 24
+        },
+        "retrieved": 2,
+        "ctxTokens": 20000,
+        "content": "Greylab",
+        "latencyMs": 8996,
+        "promptTokens": 20167,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "stale-45",
+      "category": "stale",
+      "question": "Who is the user's current employer?",
+      "idealAnswer": "Clearbird",
+      "staleLeak": "Mistlake",
+      "modeA": {
+        "ctxTokens": 19815,
+        "content": "unknown",
+        "latencyMs": 9817,
+        "promptTokens": 20085,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 42,
+          "finalContextTokens": 22098,
+          "remainingRawMessages": 32,
+          "summaryCount": 42
+        },
+        "ctxTokens": 20000,
+        "content": "Clearbird",
+        "latencyMs": 7130,
+        "promptTokens": 20166,
+        "completionTokens": 6,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19815,
+        "retrieved": 2,
+        "content": "Clearbird",
+        "latencyMs": 6465,
+        "promptTokens": 20122,
+        "completionTokens": 6,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 42,
+          "finalContextTokens": 22098,
+          "remainingRawMessages": 32,
+          "summaryCount": 42
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "Clearbird",
+        "latencyMs": 6935,
+        "promptTokens": 20167,
+        "completionTokens": 6,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "stale-46",
+      "category": "stale",
+      "question": "Who is the user's current employer?",
+      "idealAnswer": "Clearbird",
+      "staleLeak": "Halcyon",
+      "modeA": {
+        "ctxTokens": 19815,
+        "content": "unknown",
+        "latencyMs": 7176,
+        "promptTokens": 20086,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 36,
+          "finalContextTokens": 22064,
+          "remainingRawMessages": 32,
+          "summaryCount": 36
+        },
+        "ctxTokens": 20000,
+        "content": "Clearbird",
+        "latencyMs": 11550,
+        "promptTokens": 20166,
+        "completionTokens": 6,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19815,
+        "retrieved": 2,
+        "content": "Clearbird",
+        "latencyMs": 36130,
+        "promptTokens": 20123,
+        "completionTokens": 6,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 36,
+          "finalContextTokens": 22064,
+          "remainingRawMessages": 32,
+          "summaryCount": 36
+        },
+        "retrieved": 2,
+        "ctxTokens": 20000,
+        "content": "Clearbird",
+        "latencyMs": 6615,
+        "promptTokens": 20167,
+        "completionTokens": 6,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "stale-47",
+      "category": "stale",
+      "question": "Who is the user's current employer?",
+      "idealAnswer": "Greylab",
+      "staleLeak": "Pinepoint",
+      "modeA": {
+        "ctxTokens": 19819,
+        "content": "Clearbird",
+        "latencyMs": 5068,
+        "promptTokens": 20086,
+        "completionTokens": 6,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 32,
+          "finalContextTokens": 22049,
+          "remainingRawMessages": 32,
+          "summaryCount": 32
+        },
+        "ctxTokens": 20000,
+        "content": "Greylab",
+        "latencyMs": 6731,
+        "promptTokens": 20166,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19819,
+        "retrieved": 2,
+        "content": "Greylab",
+        "latencyMs": 5436,
+        "promptTokens": 20122,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 32,
+          "finalContextTokens": 22049,
+          "remainingRawMessages": 32,
+          "summaryCount": 32
+        },
+        "retrieved": 2,
+        "ctxTokens": 20000,
+        "content": "Greylab",
+        "latencyMs": 4849,
+        "promptTokens": 20167,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "stale-48",
+      "category": "stale",
+      "question": "Who is the user's current employer?",
+      "idealAnswer": "Greylab",
+      "staleLeak": "Clearbird",
+      "modeA": {
+        "ctxTokens": 19817,
+        "content": "Greylab",
+        "latencyMs": 4961,
+        "promptTokens": 20088,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 45,
+          "finalContextTokens": 22114,
+          "remainingRawMessages": 32,
+          "summaryCount": 45
+        },
+        "ctxTokens": 20000,
+        "content": "Greylab",
+        "latencyMs": 6522,
+        "promptTokens": 20166,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19817,
+        "retrieved": 2,
+        "content": "Greylab",
+        "latencyMs": 6356,
+        "promptTokens": 20124,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 45,
+          "finalContextTokens": 22114,
+          "remainingRawMessages": 32,
+          "summaryCount": 45
+        },
+        "retrieved": 2,
+        "ctxTokens": 20000,
+        "content": "Greylab",
+        "latencyMs": 33490,
+        "promptTokens": 20167,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "stale-49",
+      "category": "stale",
+      "question": "Who is the user's current employer?",
+      "idealAnswer": "Greylab",
+      "staleLeak": "Holt",
+      "modeA": {
+        "ctxTokens": 19819,
+        "content": "Greylab",
+        "latencyMs": 5450,
+        "promptTokens": 20088,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 22,
+          "finalContextTokens": 21998,
+          "remainingRawMessages": 32,
+          "summaryCount": 22
+        },
+        "ctxTokens": 20000,
+        "content": "Greylab",
+        "latencyMs": 6438,
+        "promptTokens": 20167,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19819,
+        "retrieved": 2,
+        "content": "Greylab",
+        "latencyMs": 5734,
+        "promptTokens": 20123,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 22,
+          "finalContextTokens": 21998,
+          "remainingRawMessages": 32,
+          "summaryCount": 22
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "Greylab",
+        "latencyMs": 5647,
+        "promptTokens": 20167,
+        "completionTokens": 5,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "noise-50",
+      "category": "noise",
+      "question": "What is the user's role_title?",
+      "idealAnswer": "ml engineer",
+      "noiseLeak": "rose",
+      "modeA": {
+        "ctxTokens": 19817,
+        "content": "unknown",
+        "latencyMs": 8533,
+        "promptTokens": 20086,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 43,
+          "finalContextTokens": 22101,
+          "remainingRawMessages": 32,
+          "summaryCount": 43
+        },
+        "ctxTokens": 20000,
+        "content": "ml engineer",
+        "latencyMs": 7259,
+        "promptTokens": 20165,
+        "completionTokens": 6,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19817,
+        "retrieved": 2,
+        "content": "ml engineer",
+        "latencyMs": 8494,
+        "promptTokens": 20121,
+        "completionTokens": 6,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 43,
+          "finalContextTokens": 22101,
+          "remainingRawMessages": 32,
+          "summaryCount": 43
+        },
+        "retrieved": 2,
+        "ctxTokens": 20000,
+        "content": "ml engineer",
+        "latencyMs": 6343,
+        "promptTokens": 20166,
+        "completionTokens": 6,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "noise-51",
+      "category": "noise",
+      "question": "What is the user's role_title?",
+      "idealAnswer": "research lead",
+      "noiseLeak": "ochre",
+      "modeA": {
+        "ctxTokens": 19815,
+        "content": "ml engineer",
+        "latencyMs": 32910,
+        "promptTokens": 20083,
+        "completionTokens": 6,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 27,
+          "finalContextTokens": 22019,
+          "remainingRawMessages": 32,
+          "summaryCount": 27
+        },
+        "ctxTokens": 20000,
+        "content": "research lead",
+        "latencyMs": 7434,
+        "promptTokens": 20165,
+        "completionTokens": 7,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19815,
+        "retrieved": 2,
+        "content": "research lead",
+        "latencyMs": 5450,
+        "promptTokens": 20118,
+        "completionTokens": 7,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 27,
+          "finalContextTokens": 22019,
+          "remainingRawMessages": 32,
+          "summaryCount": 27
+        },
+        "retrieved": 2,
+        "ctxTokens": 20000,
+        "content": "research lead",
+        "latencyMs": 8757,
+        "promptTokens": 20166,
+        "completionTokens": 7,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "noise-52",
+      "category": "noise",
+      "question": "What is the user's role_title?",
+      "idealAnswer": "staff engineer",
+      "noiseLeak": "ivory",
+      "modeA": {
+        "ctxTokens": 19820,
+        "content": "research lead",
+        "latencyMs": 6640,
+        "promptTokens": 20089,
+        "completionTokens": 7,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 24,
+          "finalContextTokens": 22009,
+          "remainingRawMessages": 32,
+          "summaryCount": 24
+        },
+        "ctxTokens": 20000,
+        "content": "staff engineer",
+        "latencyMs": 9857,
+        "promptTokens": 20165,
+        "completionTokens": 7,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19820,
+        "retrieved": 2,
+        "content": "staff engineer",
+        "latencyMs": 5706,
+        "promptTokens": 20124,
+        "completionTokens": 7,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 24,
+          "finalContextTokens": 22009,
+          "remainingRawMessages": 32,
+          "summaryCount": 24
+        },
+        "retrieved": 2,
+        "ctxTokens": 20000,
+        "content": "staff engineer",
+        "latencyMs": 6316,
+        "promptTokens": 20166,
+        "completionTokens": 7,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "noise-53",
+      "category": "noise",
+      "question": "What is the user's role_title?",
+      "idealAnswer": "platform PM",
+      "noiseLeak": "ivory",
+      "modeA": {
+        "ctxTokens": 19817,
+        "content": "staff engineer",
+        "latencyMs": 5666,
+        "promptTokens": 20085,
+        "completionTokens": 7,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 28,
+          "finalContextTokens": 22026,
+          "remainingRawMessages": 32,
+          "summaryCount": 28
+        },
+        "ctxTokens": 20000,
+        "content": "platform PM",
+        "latencyMs": 31287,
+        "promptTokens": 20165,
+        "completionTokens": 6,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19817,
+        "retrieved": 2,
+        "content": "platform PM",
+        "latencyMs": 5548,
+        "promptTokens": 20120,
+        "completionTokens": 6,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 28,
+          "finalContextTokens": 22026,
+          "remainingRawMessages": 32,
+          "summaryCount": 28
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "platform PM",
+        "latencyMs": 5314,
+        "promptTokens": 20166,
+        "completionTokens": 6,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "noise-54",
+      "category": "noise",
+      "question": "What is the user's role_title?",
+      "idealAnswer": "ml engineer",
+      "noiseLeak": "amber",
+      "modeA": {
+        "ctxTokens": 19816,
+        "content": "platform PM",
+        "latencyMs": 6477,
+        "promptTokens": 20081,
+        "completionTokens": 6,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 35,
+          "finalContextTokens": 22061,
+          "remainingRawMessages": 32,
+          "summaryCount": 35
+        },
+        "ctxTokens": 20000,
+        "content": "ml engineer",
+        "latencyMs": 6652,
+        "promptTokens": 20165,
+        "completionTokens": 6,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19816,
+        "retrieved": 2,
+        "content": "ml engineer",
+        "latencyMs": 12696,
+        "promptTokens": 20115,
+        "completionTokens": 6,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 35,
+          "finalContextTokens": 22061,
+          "remainingRawMessages": 32,
+          "summaryCount": 35
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "ml engineer",
+        "latencyMs": 5660,
+        "promptTokens": 20166,
+        "completionTokens": 6,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "noise-55",
+      "category": "noise",
+      "question": "What is the user's role_title?",
+      "idealAnswer": "staff engineer",
+      "noiseLeak": "sage",
+      "modeA": {
+        "ctxTokens": 19812,
+        "content": "unknown",
+        "latencyMs": 10759,
+        "promptTokens": 20083,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 24,
+          "finalContextTokens": 22003,
+          "remainingRawMessages": 32,
+          "summaryCount": 24
+        },
+        "ctxTokens": 20000,
+        "content": "staff engineer",
+        "latencyMs": 7159,
+        "promptTokens": 20165,
+        "completionTokens": 7,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19812,
+        "retrieved": 2,
+        "content": "staff engineer",
+        "latencyMs": 28686,
+        "promptTokens": 20118,
+        "completionTokens": 7,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 24,
+          "finalContextTokens": 22003,
+          "remainingRawMessages": 32,
+          "summaryCount": 24
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "staff engineer",
+        "latencyMs": 5056,
+        "promptTokens": 20166,
+        "completionTokens": 7,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "noise-56",
+      "category": "noise",
+      "question": "What is the user's role_title?",
+      "idealAnswer": "research lead",
+      "noiseLeak": "amber",
+      "modeA": {
+        "ctxTokens": 19814,
+        "content": "unknown",
+        "latencyMs": 10219,
+        "promptTokens": 20086,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 45,
+          "finalContextTokens": 22109,
+          "remainingRawMessages": 32,
+          "summaryCount": 45
+        },
+        "ctxTokens": 20000,
+        "content": "research lead",
+        "latencyMs": 7181,
+        "promptTokens": 20165,
+        "completionTokens": 7,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19814,
+        "retrieved": 2,
+        "content": "research lead",
+        "latencyMs": 5800,
+        "promptTokens": 20121,
+        "completionTokens": 7,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 45,
+          "finalContextTokens": 22109,
+          "remainingRawMessages": 32,
+          "summaryCount": 45
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "research lead",
+        "latencyMs": 6703,
+        "promptTokens": 20166,
+        "completionTokens": 7,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "noise-57",
+      "category": "noise",
+      "question": "What is the user's role_title?",
+      "idealAnswer": "platform PM",
+      "noiseLeak": "ochre",
+      "modeA": {
+        "ctxTokens": 19818,
+        "content": "unknown",
+        "latencyMs": 8570,
+        "promptTokens": 20085,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 39,
+          "finalContextTokens": 22082,
+          "remainingRawMessages": 32,
+          "summaryCount": 39
+        },
+        "ctxTokens": 20000,
+        "content": "research lead",
+        "latencyMs": 29542,
+        "promptTokens": 20165,
+        "completionTokens": 7,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19818,
+        "retrieved": 2,
+        "content": "platform PM",
+        "latencyMs": 6943,
+        "promptTokens": 20119,
+        "completionTokens": 6,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 39,
+          "finalContextTokens": 22082,
+          "remainingRawMessages": 32,
+          "summaryCount": 39
+        },
+        "retrieved": 2,
+        "ctxTokens": 20000,
+        "content": "platform PM",
+        "latencyMs": 32449,
+        "promptTokens": 20166,
+        "completionTokens": 6,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "noise-58",
+      "category": "noise",
+      "question": "What is the user's role_title?",
+      "idealAnswer": "data scientist",
+      "noiseLeak": "violet",
+      "modeA": {
+        "ctxTokens": 19820,
+        "content": "platform PM",
+        "latencyMs": 8882,
+        "promptTokens": 20087,
+        "completionTokens": 6,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 39,
+          "finalContextTokens": 22084,
+          "remainingRawMessages": 32,
+          "summaryCount": 39
+        },
+        "ctxTokens": 20000,
+        "content": "data scientist",
+        "latencyMs": 13007,
+        "promptTokens": 20165,
+        "completionTokens": 7,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19820,
+        "retrieved": 2,
+        "content": "data scientist",
+        "latencyMs": 6214,
+        "promptTokens": 20123,
+        "completionTokens": 7,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 39,
+          "finalContextTokens": 22084,
+          "remainingRawMessages": 32,
+          "summaryCount": 39
+        },
+        "retrieved": 2,
+        "ctxTokens": 20000,
+        "content": "data scientist",
+        "latencyMs": 7875,
+        "promptTokens": 20166,
+        "completionTokens": 7,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "noise-59",
+      "category": "noise",
+      "question": "What is the user's role_title?",
+      "idealAnswer": "ml engineer",
+      "noiseLeak": "slate",
+      "modeA": {
+        "ctxTokens": 19812,
+        "content": "data scientist",
+        "latencyMs": 8775,
+        "promptTokens": 20081,
+        "completionTokens": 7,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 29,
+          "finalContextTokens": 22027,
+          "remainingRawMessages": 32,
+          "summaryCount": 29
+        },
+        "ctxTokens": 20000,
+        "content": "ml engineer",
+        "latencyMs": 7368,
+        "promptTokens": 20165,
+        "completionTokens": 6,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19812,
+        "retrieved": 2,
+        "content": "ml engineer",
+        "latencyMs": 7777,
+        "promptTokens": 20116,
+        "completionTokens": 6,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 29,
+          "finalContextTokens": 22027,
+          "remainingRawMessages": 32,
+          "summaryCount": 29
+        },
+        "retrieved": 2,
+        "ctxTokens": 20000,
+        "content": "ml engineer",
+        "latencyMs": 9221,
+        "promptTokens": 20166,
+        "completionTokens": 6,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "multihop-60",
+      "category": "multihop",
+      "question": "Which city and which file are linked to the migration?",
+      "idealAnswer": "Cairo",
+      "modeA": {
+        "ctxTokens": 19819,
+        "content": "unknown",
+        "latencyMs": 69810,
+        "promptTokens": 20094,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 24,
+          "finalContextTokens": 22011,
+          "remainingRawMessages": 32,
+          "summaryCount": 24
+        },
+        "ctxTokens": 20000,
+        "content": "Cairo, scripts/release-cut.sh",
+        "latencyMs": 6103,
+        "promptTokens": 20171,
+        "completionTokens": 11,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19819,
+        "retrieved": 2,
+        "content": "Cairo, scripts/release-cut.sh",
+        "latencyMs": 10218,
+        "promptTokens": 20131,
+        "completionTokens": 11,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 24,
+          "finalContextTokens": 22011,
+          "remainingRawMessages": 32,
+          "summaryCount": 24
+        },
+        "retrieved": 2,
+        "ctxTokens": 20000,
+        "content": "Cairo, scripts/release-cut.sh",
+        "latencyMs": 6530,
+        "promptTokens": 20172,
+        "completionTokens": 11,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "multihop-61",
+      "category": "multihop",
+      "question": "Which city and which file are linked to the migration?",
+      "idealAnswer": "Cairo",
+      "modeA": {
+        "ctxTokens": 19814,
+        "content": "Cairo, scripts/release-cut.sh",
+        "latencyMs": 5431,
+        "promptTokens": 20089,
+        "completionTokens": 11,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 25,
+          "finalContextTokens": 22011,
+          "remainingRawMessages": 32,
+          "summaryCount": 25
+        },
+        "ctxTokens": 20000,
+        "content": "Cairo, frontend/src/app/Page.tsx",
+        "latencyMs": 8046,
+        "promptTokens": 20171,
+        "completionTokens": 12,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19814,
+        "retrieved": 2,
+        "content": "Cairo, frontend/src/app/Page.tsx",
+        "latencyMs": 8153,
+        "promptTokens": 20127,
+        "completionTokens": 12,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 25,
+          "finalContextTokens": 22011,
+          "remainingRawMessages": 32,
+          "summaryCount": 25
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "Cairo, frontend/src/app/Page.tsx",
+        "latencyMs": 5578,
+        "promptTokens": 20172,
+        "completionTokens": 12,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "multihop-62",
+      "category": "multihop",
+      "question": "Which city and which file are linked to the migration?",
+      "idealAnswer": "Seoul",
+      "modeA": {
+        "ctxTokens": 19817,
+        "content": "Cairo, frontend/src/app/Page.tsx",
+        "latencyMs": 6054,
+        "promptTokens": 20092,
+        "completionTokens": 12,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 35,
+          "finalContextTokens": 22066,
+          "remainingRawMessages": 32,
+          "summaryCount": 35
+        },
+        "ctxTokens": 20000,
+        "content": "Seoul, frontend/src/app/Page.tsx",
+        "latencyMs": 39439,
+        "promptTokens": 20171,
+        "completionTokens": 12,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19817,
+        "retrieved": 2,
+        "content": "Seoul, frontend/src/app/Page.tsx",
+        "latencyMs": 6308,
+        "promptTokens": 20130,
+        "completionTokens": 12,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 35,
+          "finalContextTokens": 22066,
+          "remainingRawMessages": 32,
+          "summaryCount": 35
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "Seoul, frontend/src/app/Page.tsx",
+        "latencyMs": 6859,
+        "promptTokens": 20172,
+        "completionTokens": 12,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "multihop-63",
+      "category": "multihop",
+      "question": "Which city and which file are linked to the migration?",
+      "idealAnswer": "Quito",
+      "modeA": {
+        "ctxTokens": 19818,
+        "content": "Seoul, frontend/src/app/Page.tsx",
+        "latencyMs": 5724,
+        "promptTokens": 20093,
+        "completionTokens": 12,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 35,
+          "finalContextTokens": 22064,
+          "remainingRawMessages": 32,
+          "summaryCount": 35
+        },
+        "ctxTokens": 20000,
+        "content": "Quito, tests/e2e/login.spec.ts",
+        "latencyMs": 7769,
+        "promptTokens": 20171,
+        "completionTokens": 11,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19818,
+        "retrieved": 2,
+        "content": "Quito, tests/e2e/login.spec.ts",
+        "latencyMs": 11149,
+        "promptTokens": 20130,
+        "completionTokens": 11,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 35,
+          "finalContextTokens": 22064,
+          "remainingRawMessages": 32,
+          "summaryCount": 35
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "Quito, tests/e2e/login.spec.ts",
+        "latencyMs": 5484,
+        "promptTokens": 20172,
+        "completionTokens": 11,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "multihop-64",
+      "category": "multihop",
+      "question": "Which city and which file are linked to the migration?",
+      "idealAnswer": "Riga",
+      "modeA": {
+        "ctxTokens": 19816,
+        "content": "Quito, tests/e2e/login.spec.ts",
+        "latencyMs": 5492,
+        "promptTokens": 20092,
+        "completionTokens": 11,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 26,
+          "finalContextTokens": 22017,
+          "remainingRawMessages": 32,
+          "summaryCount": 26
+        },
+        "ctxTokens": 20000,
+        "content": "Riga, scripts/release-cut.sh",
+        "latencyMs": 7343,
+        "promptTokens": 20171,
+        "completionTokens": 11,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19816,
+        "retrieved": 2,
+        "content": "Riga, scripts/release-cut.sh",
+        "latencyMs": 29831,
+        "promptTokens": 20129,
+        "completionTokens": 11,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 26,
+          "finalContextTokens": 22017,
+          "remainingRawMessages": 32,
+          "summaryCount": 26
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "Riga, scripts/release-cut.sh",
+        "latencyMs": 6143,
+        "promptTokens": 20172,
+        "completionTokens": 11,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "multihop-65",
+      "category": "multihop",
+      "question": "Which city and which file are linked to the migration?",
+      "idealAnswer": "Berlin",
+      "modeA": {
+        "ctxTokens": 19821,
+        "content": "Riga, scripts/release-cut.sh",
+        "latencyMs": 13936,
+        "promptTokens": 20095,
+        "completionTokens": 11,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 42,
+          "finalContextTokens": 22105,
+          "remainingRawMessages": 32,
+          "summaryCount": 42
+        },
+        "ctxTokens": 20000,
+        "content": "Berlin, docs/operations/runbook.md",
+        "latencyMs": 7936,
+        "promptTokens": 20171,
+        "completionTokens": 12,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19821,
+        "retrieved": 2,
+        "content": "Berlin, docs/operations/runbook.md",
+        "latencyMs": 9007,
+        "promptTokens": 20133,
+        "completionTokens": 12,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 42,
+          "finalContextTokens": 22105,
+          "remainingRawMessages": 32,
+          "summaryCount": 42
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "Berlin, docs/operations/runbook.md",
+        "latencyMs": 6460,
+        "promptTokens": 20172,
+        "completionTokens": 12,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "multihop-66",
+      "category": "multihop",
+      "question": "Which city and which file are linked to the migration?",
+      "idealAnswer": "Cairo",
+      "modeA": {
+        "ctxTokens": 19821,
+        "content": "Berlin, docs/operations/runbook.md",
+        "latencyMs": 6081,
+        "promptTokens": 20095,
+        "completionTokens": 12,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 29,
+          "finalContextTokens": 22040,
+          "remainingRawMessages": 32,
+          "summaryCount": 29
+        },
+        "ctxTokens": 20000,
+        "content": "Cairo, tests/e2e/login.spec.ts",
+        "latencyMs": 8850,
+        "promptTokens": 20171,
+        "completionTokens": 11,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19821,
+        "retrieved": 2,
+        "content": "Cairo, tests/e2e/login.spec.ts",
+        "latencyMs": 7067,
+        "promptTokens": 20133,
+        "completionTokens": 11,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 29,
+          "finalContextTokens": 22040,
+          "remainingRawMessages": 32,
+          "summaryCount": 29
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "Cairo, tests/e2e/login.spec.ts",
+        "latencyMs": 38033,
+        "promptTokens": 20171,
+        "completionTokens": 11,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "multihop-67",
+      "category": "multihop",
+      "question": "Which city and which file are linked to the migration?",
+      "idealAnswer": "Riga",
+      "modeA": {
+        "ctxTokens": 19818,
+        "content": "Cairo, tests/e2e/login.spec.ts",
+        "latencyMs": 17861,
+        "promptTokens": 20092,
+        "completionTokens": 11,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 36,
+          "finalContextTokens": 22070,
+          "remainingRawMessages": 32,
+          "summaryCount": 36
+        },
+        "ctxTokens": 20000,
+        "content": "Riga, tests/e2e/login.spec.ts",
+        "latencyMs": 13253,
+        "promptTokens": 20171,
+        "completionTokens": 11,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19818,
+        "retrieved": 2,
+        "content": "Riga, tests/e2e/login.spec.ts",
+        "latencyMs": 8003,
+        "promptTokens": 20129,
+        "completionTokens": 11,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 36,
+          "finalContextTokens": 22070,
+          "remainingRawMessages": 32,
+          "summaryCount": 36
+        },
+        "retrieved": 2,
+        "ctxTokens": 20000,
+        "content": "Riga, tests/e2e/login.spec.ts",
+        "latencyMs": 5528,
+        "promptTokens": 20172,
+        "completionTokens": 11,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "multihop-68",
+      "category": "multihop",
+      "question": "Which city and which file are linked to the migration?",
+      "idealAnswer": "Berlin",
+      "modeA": {
+        "ctxTokens": 19820,
+        "content": "Riga, tests/e2e/login.spec.ts",
+        "latencyMs": 8771,
+        "promptTokens": 20096,
+        "completionTokens": 11,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 29,
+          "finalContextTokens": 22037,
+          "remainingRawMessages": 32,
+          "summaryCount": 29
+        },
+        "ctxTokens": 20000,
+        "content": "Berlin, build/jenkins/Jenkinsfile",
+        "latencyMs": 10513,
+        "promptTokens": 20171,
+        "completionTokens": 12,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19820,
+        "retrieved": 2,
+        "content": "Berlin, build/jenkins/Jenkinsfile",
+        "latencyMs": 6907,
+        "promptTokens": 20134,
+        "completionTokens": 12,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 29,
+          "finalContextTokens": 22037,
+          "remainingRawMessages": 32,
+          "summaryCount": 29
+        },
+        "retrieved": 2,
+        "ctxTokens": 20000,
+        "content": "Berlin, build/jenkins/Jenkinsfile",
+        "latencyMs": 6247,
+        "promptTokens": 20172,
+        "completionTokens": 12,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "multihop-69",
+      "category": "multihop",
+      "question": "Which city and which file are linked to the migration?",
+      "idealAnswer": "Seoul",
+      "modeA": {
+        "ctxTokens": 19820,
+        "content": "Cairo, tests/e2e/login.spec.ts",
+        "latencyMs": 51479,
+        "promptTokens": 20096,
+        "completionTokens": 11,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 24,
+          "finalContextTokens": 22012,
+          "remainingRawMessages": 32,
+          "summaryCount": 24
+        },
+        "ctxTokens": 20000,
+        "content": "Seoul, infra/k8s/clawbot.yaml",
+        "latencyMs": 8995,
+        "promptTokens": 20171,
+        "completionTokens": 11,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19820,
+        "retrieved": 2,
+        "content": "Seoul, infra/k8s/clawbot.yaml",
+        "latencyMs": 11290,
+        "promptTokens": 20133,
+        "completionTokens": 11,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 24,
+          "finalContextTokens": 22012,
+          "remainingRawMessages": 32,
+          "summaryCount": 24
+        },
+        "retrieved": 2,
+        "ctxTokens": 20000,
+        "content": "Seoul, infra/k8s/clawbot.yaml",
+        "latencyMs": 6425,
+        "promptTokens": 20172,
+        "completionTokens": 11,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "multihop-70",
+      "category": "multihop",
+      "question": "Which city and which file are linked to the migration?",
+      "idealAnswer": "Lima",
+      "modeA": {
+        "ctxTokens": 19819,
+        "content": "Lima, infra/k8s/clawbot.yaml",
+        "latencyMs": 19777,
+        "promptTokens": 20093,
+        "completionTokens": 11,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 44,
+          "finalContextTokens": 22109,
+          "remainingRawMessages": 32,
+          "summaryCount": 44
+        },
+        "ctxTokens": 20000,
+        "content": "Lima, src/runtime/init.ts",
+        "latencyMs": 30724,
+        "promptTokens": 20171,
+        "completionTokens": 10,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19819,
+        "retrieved": 2,
+        "content": "Lima, src/runtime/init.ts",
+        "latencyMs": 10416,
+        "promptTokens": 20129,
+        "completionTokens": 10,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 44,
+          "finalContextTokens": 22109,
+          "remainingRawMessages": 32,
+          "summaryCount": 44
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "Lima, src/runtime/init.ts",
+        "latencyMs": 7526,
+        "promptTokens": 20172,
+        "completionTokens": 10,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "multihop-71",
+      "category": "multihop",
+      "question": "Which city and which file are linked to the migration?",
+      "idealAnswer": "Oslo",
+      "modeA": {
+        "ctxTokens": 19821,
+        "content": "Lima, src/runtime/init.ts",
+        "latencyMs": 7837,
+        "promptTokens": 20096,
+        "completionTokens": 10,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 31,
+          "finalContextTokens": 22045,
+          "remainingRawMessages": 32,
+          "summaryCount": 31
+        },
+        "ctxTokens": 20000,
+        "content": "Oslo, src/runtime/init.ts",
+        "latencyMs": 7965,
+        "promptTokens": 20171,
+        "completionTokens": 10,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19821,
+        "retrieved": 2,
+        "content": "Oslo, src/runtime/init.ts",
+        "latencyMs": 9448,
+        "promptTokens": 20132,
+        "completionTokens": 10,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 31,
+          "finalContextTokens": 22045,
+          "remainingRawMessages": 32,
+          "summaryCount": 31
+        },
+        "retrieved": 2,
+        "ctxTokens": 20000,
+        "content": "Oslo, src/runtime/init.ts",
+        "latencyMs": 6605,
+        "promptTokens": 20172,
+        "completionTokens": 10,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "multihop-72",
+      "category": "multihop",
+      "question": "Which city and which file are linked to the migration?",
+      "idealAnswer": "Oslo",
+      "modeA": {
+        "ctxTokens": 19820,
+        "content": "Lima, infra/k8s/clawbot.yaml",
+        "latencyMs": 62778,
+        "promptTokens": 20096,
+        "completionTokens": 11,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 25,
+          "finalContextTokens": 22016,
+          "remainingRawMessages": 32,
+          "summaryCount": 25
+        },
+        "ctxTokens": 20000,
+        "content": "Oslo, src/runtime/init.ts",
+        "latencyMs": 9616,
+        "promptTokens": 20171,
+        "completionTokens": 10,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19820,
+        "retrieved": 2,
+        "content": "Oslo, src/runtime/init.ts",
+        "latencyMs": 7471,
+        "promptTokens": 20132,
+        "completionTokens": 10,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 25,
+          "finalContextTokens": 22016,
+          "remainingRawMessages": 32,
+          "summaryCount": 25
+        },
+        "retrieved": 2,
+        "ctxTokens": 20000,
+        "content": "Oslo, src/runtime/init.ts",
+        "latencyMs": 7487,
+        "promptTokens": 20172,
+        "completionTokens": 10,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "multihop-73",
+      "category": "multihop",
+      "question": "Which city and which file are linked to the migration?",
+      "idealAnswer": "Lima",
+      "modeA": {
+        "ctxTokens": 19826,
+        "content": "Oslo, src/runtime/init.ts",
+        "latencyMs": 6376,
+        "promptTokens": 20098,
+        "completionTokens": 10,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 29,
+          "finalContextTokens": 22043,
+          "remainingRawMessages": 32,
+          "summaryCount": 29
+        },
+        "ctxTokens": 20000,
+        "content": "Lima, infra/k8s/clawbot.yaml",
+        "latencyMs": 9770,
+        "promptTokens": 20171,
+        "completionTokens": 11,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19826,
+        "retrieved": 2,
+        "content": "Lima, infra/k8s/clawbot.yaml",
+        "latencyMs": 6219,
+        "promptTokens": 20135,
+        "completionTokens": 11,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 29,
+          "finalContextTokens": 22043,
+          "remainingRawMessages": 32,
+          "summaryCount": 29
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "Lima, infra/k8s/clawbot.yaml",
+        "latencyMs": 6427,
+        "promptTokens": 20172,
+        "completionTokens": 11,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "multihop-74",
+      "category": "multihop",
+      "question": "Which city and which file are linked to the migration?",
+      "idealAnswer": "Seoul",
+      "modeA": {
+        "ctxTokens": 19816,
+        "content": "Lima, infra/k8s/clawbot.yaml",
+        "latencyMs": 10375,
+        "promptTokens": 20092,
+        "completionTokens": 11,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 24,
+          "finalContextTokens": 22006,
+          "remainingRawMessages": 32,
+          "summaryCount": 24
+        },
+        "ctxTokens": 20000,
+        "content": "Seoul, src/runtime/init.ts",
+        "latencyMs": 43499,
+        "promptTokens": 20171,
+        "completionTokens": 10,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19816,
+        "retrieved": 2,
+        "content": "Seoul, src/runtime/init.ts",
+        "latencyMs": 19578,
+        "promptTokens": 20129,
+        "completionTokens": 10,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 24,
+          "finalContextTokens": 22006,
+          "remainingRawMessages": 32,
+          "summaryCount": 24
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "Seoul, src/runtime/init.ts",
+        "latencyMs": 6317,
+        "promptTokens": 20172,
+        "completionTokens": 10,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "multihop-75",
+      "category": "multihop",
+      "question": "Which city and which file are linked to the migration?",
+      "idealAnswer": "Manila",
+      "modeA": {
+        "ctxTokens": 19814,
+        "content": "Seoul, src/runtime/init.ts",
+        "latencyMs": 9216,
+        "promptTokens": 20089,
+        "completionTokens": 10,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 44,
+          "finalContextTokens": 22106,
+          "remainingRawMessages": 32,
+          "summaryCount": 44
+        },
+        "ctxTokens": 20000,
+        "content": "Manila, lib/auth/oauth-cb.go",
+        "latencyMs": 6017,
+        "promptTokens": 20171,
+        "completionTokens": 11,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19814,
+        "retrieved": 2,
+        "content": "Manila, lib/auth/oauth-cb.go",
+        "latencyMs": 7883,
+        "promptTokens": 20126,
+        "completionTokens": 11,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 44,
+          "finalContextTokens": 22106,
+          "remainingRawMessages": 32,
+          "summaryCount": 44
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "Manila, lib/auth/oauth-cb.go",
+        "latencyMs": 7594,
+        "promptTokens": 20172,
+        "completionTokens": 11,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "multihop-76",
+      "category": "multihop",
+      "question": "Which city and which file are linked to the migration?",
+      "idealAnswer": "Manila",
+      "modeA": {
+        "ctxTokens": 19816,
+        "content": "Manila, lib/auth/oauth-cb.go",
+        "latencyMs": 11890,
+        "promptTokens": 20092,
+        "completionTokens": 11,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 39,
+          "finalContextTokens": 22084,
+          "remainingRawMessages": 32,
+          "summaryCount": 39
+        },
+        "ctxTokens": 20000,
+        "content": "Manila, infra/k8s/clawbot.yaml",
+        "latencyMs": 12128,
+        "promptTokens": 20171,
+        "completionTokens": 11,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19816,
+        "retrieved": 2,
+        "content": "Manila, infra/k8s/clawbot.yaml",
+        "latencyMs": 36738,
+        "promptTokens": 20130,
+        "completionTokens": 11,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 39,
+          "finalContextTokens": 22084,
+          "remainingRawMessages": 32,
+          "summaryCount": 39
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "Manila, infra/k8s/clawbot.yaml",
+        "latencyMs": 5767,
+        "promptTokens": 20172,
+        "completionTokens": 11,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "multihop-77",
+      "category": "multihop",
+      "question": "Which city and which file are linked to the migration?",
+      "idealAnswer": "Manila",
+      "modeA": {
+        "ctxTokens": 19817,
+        "content": "Manila, infra/k8s/clawbot.yaml",
+        "latencyMs": 6595,
+        "promptTokens": 20092,
+        "completionTokens": 11,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 26,
+          "finalContextTokens": 22020,
+          "remainingRawMessages": 32,
+          "summaryCount": 26
+        },
+        "ctxTokens": 20000,
+        "content": "Manila, internal/queue/dispatch.py",
+        "latencyMs": 6437,
+        "promptTokens": 20171,
+        "completionTokens": 12,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19817,
+        "retrieved": 2,
+        "content": "Manila, internal/queue/dispatch.py",
+        "latencyMs": 11160,
+        "promptTokens": 20130,
+        "completionTokens": 12,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 26,
+          "finalContextTokens": 22020,
+          "remainingRawMessages": 32,
+          "summaryCount": 26
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "Manila, internal/queue/dispatch.py",
+        "latencyMs": 7089,
+        "promptTokens": 20172,
+        "completionTokens": 12,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "multihop-78",
+      "category": "multihop",
+      "question": "Which city and which file are linked to the migration?",
+      "idealAnswer": "Berlin",
+      "modeA": {
+        "ctxTokens": 19814,
+        "content": "Manila, internal/queue/dispatch.py",
+        "latencyMs": 9694,
+        "promptTokens": 20088,
+        "completionTokens": 12,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 30,
+          "finalContextTokens": 22036,
+          "remainingRawMessages": 32,
+          "summaryCount": 30
+        },
+        "ctxTokens": 20000,
+        "content": "Berlin, scripts/release-cut.sh",
+        "latencyMs": 7100,
+        "promptTokens": 20171,
+        "completionTokens": 11,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19814,
+        "retrieved": 2,
+        "content": "Berlin, scripts/release-cut.sh",
+        "latencyMs": 9300,
+        "promptTokens": 20125,
+        "completionTokens": 11,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 30,
+          "finalContextTokens": 22036,
+          "remainingRawMessages": 32,
+          "summaryCount": 30
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "Berlin, scripts/release-cut.sh",
+        "latencyMs": 34493,
+        "promptTokens": 20172,
+        "completionTokens": 11,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "multihop-79",
+      "category": "multihop",
+      "question": "Which city and which file are linked to the migration?",
+      "idealAnswer": "Oslo",
+      "modeA": {
+        "ctxTokens": 19821,
+        "content": "Berlin, scripts/release-cut.sh",
+        "latencyMs": 8536,
+        "promptTokens": 20092,
+        "completionTokens": 11,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 33,
+          "finalContextTokens": 22056,
+          "remainingRawMessages": 32,
+          "summaryCount": 33
+        },
+        "ctxTokens": 20000,
+        "content": "Oslo, lib/auth/oauth-cb.go",
+        "latencyMs": 6859,
+        "promptTokens": 20171,
+        "completionTokens": 10,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19821,
+        "retrieved": 2,
+        "content": "Oslo, lib/auth/oauth-cb.go",
+        "latencyMs": 9464,
+        "promptTokens": 20129,
+        "completionTokens": 10,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 33,
+          "finalContextTokens": 22056,
+          "remainingRawMessages": 32,
+          "summaryCount": 33
+        },
+        "retrieved": 2,
+        "ctxTokens": 19999,
+        "content": "Oslo, lib/auth/oauth-cb.go",
+        "latencyMs": 7100,
+        "promptTokens": 20172,
+        "completionTokens": 10,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-80",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "lib/auth/oauth-cb.go:716:E6822:race_condition_in_resolveProvider",
+      "modeA": {
+        "ctxTokens": 19821,
+        "content": "unknown",
+        "latencyMs": 7875,
+        "promptTokens": 20107,
+        "completionTokens": 5,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 45,
+          "finalContextTokens": 22097,
+          "remainingRawMessages": 32,
+          "summaryCount": 45
+        },
+        "ctxTokens": 20000,
+        "content": "lib/auth/oauth-cb.go:716:E6822:race_condition_in_resolveProvider",
+        "latencyMs": 6056,
+        "promptTokens": 20180,
+        "completionTokens": 20,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19821,
+        "retrieved": 0,
+        "content": "lib/auth/oauth-cb.go:716:E6822:race_condition_in_resolveProvider",
+        "latencyMs": 10514,
+        "promptTokens": 20112,
+        "completionTokens": 20,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 45,
+          "finalContextTokens": 22097,
+          "remainingRawMessages": 32,
+          "summaryCount": 45
+        },
+        "retrieved": 0,
+        "ctxTokens": 20000,
+        "content": "lib/auth/oauth-cb.go:716:E6822:race_condition_in_resolveProvider",
+        "latencyMs": 9955,
+        "promptTokens": 20181,
+        "completionTokens": 20,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-81",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "docs/operations/runbook.md:176:E2193:null_deref_in_assemble",
+      "modeA": {
+        "ctxTokens": 19819,
+        "content": "lib/auth/oauth-cb.go:716:E6822:race_condition_in_resolveProvider",
+        "latencyMs": 31183,
+        "promptTokens": 20102,
+        "completionTokens": 20,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 40,
+          "finalContextTokens": 22068,
+          "remainingRawMessages": 32,
+          "summaryCount": 40
+        },
+        "ctxTokens": 20000,
+        "content": "docs/operations/runbook.md:176:E2193:null_deref_in_assemble",
+        "latencyMs": 5638,
+        "promptTokens": 20180,
+        "completionTokens": 18,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19819,
+        "retrieved": 0,
+        "content": "docs/operations/runbook.md:176:E2193:null_deref_in_assemble",
+        "latencyMs": 6333,
+        "promptTokens": 20107,
+        "completionTokens": 18,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 40,
+          "finalContextTokens": 22068,
+          "remainingRawMessages": 32,
+          "summaryCount": 40
+        },
+        "retrieved": 0,
+        "ctxTokens": 20000,
+        "content": "docs/operations/runbook.md:176:E2193:null_deref_in_assemble",
+        "latencyMs": 6287,
+        "promptTokens": 20182,
+        "completionTokens": 18,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-82",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "docs/operations/runbook.md:810:E6661:race_condition_in_resolveProvider",
+      "modeA": {
+        "ctxTokens": 19817,
+        "content": "docs/operations/runbook.md:176:E2193:null_deref_in_assemble",
+        "latencyMs": 7326,
+        "promptTokens": 20100,
+        "completionTokens": 18,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 46,
+          "finalContextTokens": 22099,
+          "remainingRawMessages": 32,
+          "summaryCount": 46
+        },
+        "ctxTokens": 20000,
+        "content": "docs/operations/runbook.md:810:E6661:race_condition_in_resolveProvider",
+        "latencyMs": 7262,
+        "promptTokens": 20180,
+        "completionTokens": 21,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19817,
+        "retrieved": 0,
+        "content": "docs/operations/runbook.md:810:E6661:race_condition_in_resolveProvider",
+        "latencyMs": 8422,
+        "promptTokens": 20105,
+        "completionTokens": 21,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 46,
+          "finalContextTokens": 22099,
+          "remainingRawMessages": 32,
+          "summaryCount": 46
+        },
+        "retrieved": 0,
+        "ctxTokens": 20000,
+        "content": "docs/operations/runbook.md:810:E6661:race_condition_in_resolveProvider",
+        "latencyMs": 8769,
+        "promptTokens": 20181,
+        "completionTokens": 21,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-83",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "tools/migrations/0042_add_fts5.sql:999:E1243:null_deref_in_assemble",
+      "modeA": {
+        "ctxTokens": 19814,
+        "content": "docs/operations/runbook.md:810:E6661:race_condition_in_resolveProvider",
+        "latencyMs": 13191,
+        "promptTokens": 20102,
+        "completionTokens": 21,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 26,
+          "finalContextTokens": 21995,
+          "remainingRawMessages": 32,
+          "summaryCount": 26
+        },
+        "ctxTokens": 20000,
+        "content": "tools/migrations/0042_add_fts5.sql:999:E1243:null_deref_in_assemble",
+        "latencyMs": 31104,
+        "promptTokens": 20180,
+        "completionTokens": 20,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19814,
+        "retrieved": 0,
+        "content": "tools/migrations/0042_add_fts5.sql:999:E1243:null_deref_in_assemble",
+        "latencyMs": 7232,
+        "promptTokens": 20107,
+        "completionTokens": 20,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 26,
+          "finalContextTokens": 21995,
+          "remainingRawMessages": 32,
+          "summaryCount": 26
+        },
+        "retrieved": 0,
+        "ctxTokens": 20000,
+        "content": "tools/migrations/0042_add_fts5.sql:999:E1243:null_deref_in_assemble",
+        "latencyMs": 11736,
+        "promptTokens": 20181,
+        "completionTokens": 20,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-84",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "src/runtime/init.ts:101:E5086:race_condition_in_resolveProvider",
+      "modeA": {
+        "ctxTokens": 19821,
+        "content": "tools/migrations/0042_add_fts5.sql:999:E1243:null_deref_in_assemble",
+        "latencyMs": 9283,
+        "promptTokens": 20104,
+        "completionTokens": 20,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 28,
+          "finalContextTokens": 22012,
+          "remainingRawMessages": 32,
+          "summaryCount": 28
+        },
+        "ctxTokens": 20000,
+        "content": "src/runtime/init.ts:101:E5086:race_condition_in_resolveProvider",
+        "latencyMs": 5650,
+        "promptTokens": 20180,
+        "completionTokens": 19,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19821,
+        "retrieved": 0,
+        "content": "src/runtime/init.ts:101:E5086:race_condition_in_resolveProvider",
+        "latencyMs": 7044,
+        "promptTokens": 20109,
+        "completionTokens": 19,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 28,
+          "finalContextTokens": 22012,
+          "remainingRawMessages": 32,
+          "summaryCount": 28
+        },
+        "retrieved": 0,
+        "ctxTokens": 20000,
+        "content": "src/runtime/init.ts:101:E5086:race_condition_in_resolveProvider",
+        "latencyMs": 6640,
+        "promptTokens": 20181,
+        "completionTokens": 19,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-85",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "tools/migrations/0042_add_fts5.sql:889:E2577:null_deref_in_assemble",
+      "modeA": {
+        "ctxTokens": 19821,
+        "content": "src/runtime/init.ts:101:E5086:race_condition_in_resolveProvider",
+        "latencyMs": 10491,
+        "promptTokens": 20103,
+        "completionTokens": 19,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 41,
+          "finalContextTokens": 22075,
+          "remainingRawMessages": 32,
+          "summaryCount": 41
+        },
+        "ctxTokens": 20000,
+        "content": "tools/migrations/0042_add_fts5.sql:889:E2577:null_deref_in_assemble",
+        "latencyMs": 11196,
+        "promptTokens": 20180,
+        "completionTokens": 20,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19821,
+        "retrieved": 0,
+        "content": "tools/migrations/0042_add_fts5.sql:889:E2577:null_deref_in_assemble",
+        "latencyMs": 34173,
+        "promptTokens": 20108,
+        "completionTokens": 20,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 41,
+          "finalContextTokens": 22075,
+          "remainingRawMessages": 32,
+          "summaryCount": 41
+        },
+        "retrieved": 0,
+        "ctxTokens": 20000,
+        "content": "tools/migrations/0042_add_fts5.sql:889:E2577:null_deref_in_assemble",
+        "latencyMs": 7683,
+        "promptTokens": 20181,
+        "completionTokens": 20,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-86",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "tools/migrations/0042_add_fts5.sql:58:E9431:panic_at_bootstrap",
+      "modeA": {
+        "ctxTokens": 19821,
+        "content": "tools/migrations/0042_add_fts5.sql:889:E2577:null_deref_in_assemble",
+        "latencyMs": 6773,
+        "promptTokens": 20106,
+        "completionTokens": 20,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 33,
+          "finalContextTokens": 22035,
+          "remainingRawMessages": 32,
+          "summaryCount": 33
+        },
+        "ctxTokens": 20000,
+        "content": "tools/migrations/0042_add_fts5.sql:58:E9431:panic_at_bootstrap",
+        "latencyMs": 7783,
+        "promptTokens": 20180,
+        "completionTokens": 19,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19821,
+        "retrieved": 0,
+        "content": "tools/migrations/0042_add_fts5.sql:58:E9431:panic_at_bootstrap",
+        "latencyMs": 6534,
+        "promptTokens": 20111,
+        "completionTokens": 19,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 33,
+          "finalContextTokens": 22035,
+          "remainingRawMessages": 32,
+          "summaryCount": 33
+        },
+        "retrieved": 0,
+        "ctxTokens": 20000,
+        "content": "tools/migrations/0042_add_fts5.sql:58:E9431:panic_at_bootstrap",
+        "latencyMs": 7245,
+        "promptTokens": 20181,
+        "completionTokens": 19,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-87",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "build/jenkins/Jenkinsfile:948:E8663:race_condition_in_resolveProvider",
+      "modeA": {
+        "ctxTokens": 19819,
+        "content": "tools/migrations/0042_add_fts5.sql:58:E9431:panic_at_bootstrap",
+        "latencyMs": 6092,
+        "promptTokens": 20104,
+        "completionTokens": 19,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 44,
+          "finalContextTokens": 22090,
+          "remainingRawMessages": 32,
+          "summaryCount": 44
+        },
+        "ctxTokens": 20000,
+        "content": "build/jenkins/Jenkinsfile:948:E8663:race_condition_in_resolveProvider",
+        "latencyMs": 8654,
+        "promptTokens": 20180,
+        "completionTokens": 21,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19819,
+        "retrieved": 0,
+        "content": "build/jenkins/Jenkinsfile:948:E8663:race_condition_in_resolveProvider",
+        "latencyMs": 6602,
+        "promptTokens": 20109,
+        "completionTokens": 21,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 44,
+          "finalContextTokens": 22090,
+          "remainingRawMessages": 32,
+          "summaryCount": 44
+        },
+        "retrieved": 0,
+        "ctxTokens": 20000,
+        "content": "build/jenkins/Jenkinsfile:948:E8663:race_condition_in_resolveProvider",
+        "latencyMs": 33897,
+        "promptTokens": 20181,
+        "completionTokens": 21,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-88",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "tools/migrations/0042_add_fts5.sql:609:E4267:memory_leak_in_summarize",
+      "modeA": {
+        "ctxTokens": 19817,
+        "content": "build/jenkins/Jenkinsfile:948:E8663:race_condition_in_resolveProvider",
+        "latencyMs": 6178,
+        "promptTokens": 20100,
+        "completionTokens": 21,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 24,
+          "finalContextTokens": 21987,
+          "remainingRawMessages": 32,
+          "summaryCount": 24
+        },
+        "ctxTokens": 20000,
+        "content": "tools/migrations/0042_add_fts5.sql:609:E4267:memory_leak_in_summarize",
+        "latencyMs": 6996,
+        "promptTokens": 20180,
+        "completionTokens": 21,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19817,
+        "retrieved": 0,
+        "content": "tools/migrations/0042_add_fts5.sql:609:E4267:memory_leak_in_summarize",
+        "latencyMs": 6974,
+        "promptTokens": 20105,
+        "completionTokens": 21,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 24,
+          "finalContextTokens": 21987,
+          "remainingRawMessages": 32,
+          "summaryCount": 24
+        },
+        "retrieved": 0,
+        "ctxTokens": 20000,
+        "content": "tools/migrations/0042_add_fts5.sql:609:E4267:memory_leak_in_summarize",
+        "latencyMs": 9239,
+        "promptTokens": 20181,
+        "completionTokens": 21,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-89",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "tests/e2e/login.spec.ts:241:E2743:panic_at_bootstrap",
+      "modeA": {
+        "ctxTokens": 19807,
+        "content": "tools/migrations/0042_add_fts5.sql:609:E4267:memory_leak_in_summarize",
+        "latencyMs": 12561,
+        "promptTokens": 20093,
+        "completionTokens": 21,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 44,
+          "finalContextTokens": 22077,
+          "remainingRawMessages": 32,
+          "summaryCount": 44
+        },
+        "ctxTokens": 20000,
+        "content": "tests/e2e/login.spec.ts:241:E2743:panic_at_bootstrap",
+        "latencyMs": 7683,
+        "promptTokens": 20180,
+        "completionTokens": 17,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19807,
+        "retrieved": 0,
+        "content": "tests/e2e/login.spec.ts:241:E2743:panic_at_bootstrap",
+        "latencyMs": 6612,
+        "promptTokens": 20098,
+        "completionTokens": 17,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 44,
+          "finalContextTokens": 22077,
+          "remainingRawMessages": 32,
+          "summaryCount": 44
+        },
+        "retrieved": 0,
+        "ctxTokens": 20000,
+        "content": "tests/e2e/login.spec.ts:241:E2743:panic_at_bootstrap",
+        "latencyMs": 6918,
+        "promptTokens": 20181,
+        "completionTokens": 17,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-90",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "frontend/src/app/Page.tsx:775:E5068:deadlock_on_session_lock",
+      "modeA": {
+        "ctxTokens": 19813,
+        "content": "tests/e2e/login.spec.ts:241:E2743:panic_at_bootstrap",
+        "latencyMs": 36750,
+        "promptTokens": 20099,
+        "completionTokens": 17,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 22,
+          "finalContextTokens": 21972,
+          "remainingRawMessages": 32,
+          "summaryCount": 22
+        },
+        "ctxTokens": 20000,
+        "content": "frontend/src/app/Page.tsx:775:E5068:deadlock_on_session_lock",
+        "latencyMs": 9150,
+        "promptTokens": 20180,
+        "completionTokens": 19,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19813,
+        "retrieved": 0,
+        "content": "frontend/src/app/Page.tsx:775:E5068:deadlock_on_session_lock",
+        "latencyMs": 6171,
+        "promptTokens": 20104,
+        "completionTokens": 19,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 22,
+          "finalContextTokens": 21972,
+          "remainingRawMessages": 32,
+          "summaryCount": 22
+        },
+        "retrieved": 0,
+        "ctxTokens": 20000,
+        "content": "frontend/src/app/Page.tsx:775:E5068:deadlock_on_session_lock",
+        "latencyMs": 7482,
+        "promptTokens": 20181,
+        "completionTokens": 19,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-91",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "lib/auth/oauth-cb.go:991:E4802:null_deref_in_assemble",
+      "modeA": {
+        "ctxTokens": 19821,
+        "content": "frontend/src/app/Page.tsx:775:E5068:deadlock_on_session_lock",
+        "latencyMs": 6299,
+        "promptTokens": 20103,
+        "completionTokens": 19,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 42,
+          "finalContextTokens": 22081,
+          "remainingRawMessages": 32,
+          "summaryCount": 42
+        },
+        "ctxTokens": 20000,
+        "content": "lib/auth/oauth-cb.go:991:E4802:null_deref_in_assemble",
+        "latencyMs": 6413,
+        "promptTokens": 20180,
+        "completionTokens": 17,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19821,
+        "retrieved": 0,
+        "content": "lib/auth/oauth-cb.go:991:E4802:null_deref_in_assemble",
+        "latencyMs": 6053,
+        "promptTokens": 20108,
+        "completionTokens": 17,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 42,
+          "finalContextTokens": 22081,
+          "remainingRawMessages": 32,
+          "summaryCount": 42
+        },
+        "retrieved": 0,
+        "ctxTokens": 20000,
+        "content": "lib/auth/oauth-cb.go:991:E4802:null_deref_in_assemble",
+        "latencyMs": 7775,
+        "promptTokens": 20181,
+        "completionTokens": 17,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-92",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "internal/queue/dispatch.py:432:E3010:race_condition_in_resolveProvider",
+      "modeA": {
+        "ctxTokens": 19819,
+        "content": "lib/auth/oauth-cb.go:991:E4802:null_deref_in_assemble",
+        "latencyMs": 8974,
+        "promptTokens": 20104,
+        "completionTokens": 17,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 30,
+          "finalContextTokens": 22019,
+          "remainingRawMessages": 32,
+          "summaryCount": 30
+        },
+        "ctxTokens": 20000,
+        "content": "internal/queue/dispatch.py:432:E3010:race_condition_in_resolveProvider",
+        "latencyMs": 54334,
+        "promptTokens": 20180,
+        "completionTokens": 21,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19819,
+        "retrieved": 0,
+        "content": "internal/queue/dispatch.py:432:E3010:race_condition_in_resolveProvider",
+        "latencyMs": 10161,
+        "promptTokens": 20109,
+        "completionTokens": 21,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 30,
+          "finalContextTokens": 22019,
+          "remainingRawMessages": 32,
+          "summaryCount": 30
+        },
+        "retrieved": 0,
+        "ctxTokens": 20000,
+        "content": "internal/queue/dispatch.py:432:E3010:race_condition_in_resolveProvider",
+        "latencyMs": 6173,
+        "promptTokens": 20181,
+        "completionTokens": 21,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-93",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "frontend/src/app/Page.tsx:594:E2154:null_deref_in_assemble",
+      "modeA": {
+        "ctxTokens": 19817,
+        "content": "internal/queue/dispatch.py:432:E3010:race_condition_in_resolveProvider",
+        "latencyMs": 8615,
+        "promptTokens": 20100,
+        "completionTokens": 21,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 22,
+          "finalContextTokens": 21978,
+          "remainingRawMessages": 32,
+          "summaryCount": 22
+        },
+        "ctxTokens": 20000,
+        "content": "frontend/src/app/Page.tsx:594:E2154:null_deref_in_assemble",
+        "latencyMs": 6294,
+        "promptTokens": 20180,
+        "completionTokens": 18,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19817,
+        "retrieved": 0,
+        "content": "frontend/src/app/Page.tsx:594:E2154:null_deref_in_assemble",
+        "latencyMs": 7306,
+        "promptTokens": 20105,
+        "completionTokens": 18,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 22,
+          "finalContextTokens": 21978,
+          "remainingRawMessages": 32,
+          "summaryCount": 22
+        },
+        "retrieved": 0,
+        "ctxTokens": 20000,
+        "content": "frontend/src/app/Page.tsx:594:E2154:null_deref_in_assemble",
+        "latencyMs": 6348,
+        "promptTokens": 20182,
+        "completionTokens": 18,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-94",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "infra/k8s/clawbot.yaml:351:E8128:null_deref_in_assemble",
+      "modeA": {
+        "ctxTokens": 19815,
+        "content": "frontend/src/app/Page.tsx:594:E2154:null_deref_in_assemble",
+        "latencyMs": 7884,
+        "promptTokens": 20103,
+        "completionTokens": 18,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 31,
+          "finalContextTokens": 22020,
+          "remainingRawMessages": 32,
+          "summaryCount": 31
+        },
+        "ctxTokens": 20000,
+        "content": "infra/k8s/clawbot.yaml:351:E8128:null_deref_in_assemble",
+        "latencyMs": 6868,
+        "promptTokens": 20180,
+        "completionTokens": 17,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19815,
+        "retrieved": 0,
+        "content": "infra/k8s/clawbot.yaml:351:E8128:null_deref_in_assemble",
+        "latencyMs": 60307,
+        "promptTokens": 20108,
+        "completionTokens": 17,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 31,
+          "finalContextTokens": 22020,
+          "remainingRawMessages": 32,
+          "summaryCount": 31
+        },
+        "retrieved": 0,
+        "ctxTokens": 20000,
+        "content": "infra/k8s/clawbot.yaml:351:E8128:null_deref_in_assemble",
+        "latencyMs": 6798,
+        "promptTokens": 20181,
+        "completionTokens": 17,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-95",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "lib/auth/oauth-cb.go:316:E3066:memory_leak_in_summarize",
+      "modeA": {
+        "ctxTokens": 19821,
+        "content": "infra/k8s/clawbot.yaml:351:E8128:null_deref_in_assemble",
+        "latencyMs": 6275,
+        "promptTokens": 20105,
+        "completionTokens": 17,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 45,
+          "finalContextTokens": 22097,
+          "remainingRawMessages": 32,
+          "summaryCount": 45
+        },
+        "ctxTokens": 20000,
+        "content": "lib/auth/oauth-cb.go:316:E3066:memory_leak_in_summarize",
+        "latencyMs": 7612,
+        "promptTokens": 20180,
+        "completionTokens": 17,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19821,
+        "retrieved": 0,
+        "content": "lib/auth/oauth-cb.go:316:E3066:memory_leak_in_summarize",
+        "latencyMs": 8039,
+        "promptTokens": 20110,
+        "completionTokens": 17,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 45,
+          "finalContextTokens": 22097,
+          "remainingRawMessages": 32,
+          "summaryCount": 45
+        },
+        "retrieved": 0,
+        "ctxTokens": 20000,
+        "content": "lib/auth/oauth-cb.go:316:E3066:memory_leak_in_summarize",
+        "latencyMs": 7647,
+        "promptTokens": 20181,
+        "completionTokens": 17,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-96",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "lib/auth/oauth-cb.go:780:E1515:race_condition_in_resolveProvider",
+      "modeA": {
+        "ctxTokens": 19827,
+        "content": "lib/auth/oauth-cb.go:316:E3066:memory_leak_in_summarize",
+        "latencyMs": 6301,
+        "promptTokens": 20109,
+        "completionTokens": 17,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 33,
+          "finalContextTokens": 22042,
+          "remainingRawMessages": 32,
+          "summaryCount": 33
+        },
+        "ctxTokens": 20000,
+        "content": "lib/auth/oauth-cb.go:780:E1515:race_condition_in_resolveProvider",
+        "latencyMs": 9473,
+        "promptTokens": 20180,
+        "completionTokens": 20,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19827,
+        "retrieved": 0,
+        "content": "lib/auth/oauth-cb.go:780:E1515:race_condition_in_resolveProvider",
+        "latencyMs": 6868,
+        "promptTokens": 20114,
+        "completionTokens": 20,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 33,
+          "finalContextTokens": 22042,
+          "remainingRawMessages": 32,
+          "summaryCount": 33
+        },
+        "retrieved": 0,
+        "ctxTokens": 20000,
+        "content": "lib/auth/oauth-cb.go:780:E1515:race_condition_in_resolveProvider",
+        "latencyMs": 38365,
+        "promptTokens": 20181,
+        "completionTokens": 20,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-97",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "docs/operations/runbook.md:234:E6126:race_condition_in_resolveProvider",
+      "modeA": {
+        "ctxTokens": 19814,
+        "content": "lib/auth/oauth-cb.go:780:E1515:race_condition_in_resolveProvider",
+        "latencyMs": 6070,
+        "promptTokens": 20096,
+        "completionTokens": 20,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 43,
+          "finalContextTokens": 22080,
+          "remainingRawMessages": 32,
+          "summaryCount": 43
+        },
+        "ctxTokens": 20000,
+        "content": "docs/operations/runbook.md:234:E6126:race_condition_in_resolveProvider",
+        "latencyMs": 6936,
+        "promptTokens": 20180,
+        "completionTokens": 21,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19814,
+        "retrieved": 0,
+        "content": "docs/operations/runbook.md:234:E6126:race_condition_in_resolveProvider",
+        "latencyMs": 9107,
+        "promptTokens": 20101,
+        "completionTokens": 21,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 43,
+          "finalContextTokens": 22080,
+          "remainingRawMessages": 32,
+          "summaryCount": 43
+        },
+        "retrieved": 0,
+        "ctxTokens": 20000,
+        "content": "docs/operations/runbook.md:234:E6126:race_condition_in_resolveProvider",
+        "latencyMs": 6202,
+        "promptTokens": 20181,
+        "completionTokens": 21,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-98",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "src/runtime/init.ts:648:E3497:panic_at_bootstrap",
+      "modeA": {
+        "ctxTokens": 19818,
+        "content": "docs/operations/runbook.md:234:E6126:race_condition_in_resolveProvider",
+        "latencyMs": 7081,
+        "promptTokens": 20100,
+        "completionTokens": 21,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 42,
+          "finalContextTokens": 22078,
+          "remainingRawMessages": 32,
+          "summaryCount": 42
+        },
+        "ctxTokens": 20000,
+        "content": "src/runtime/init.ts:648:E3497:panic_at_bootstrap",
+        "latencyMs": 7661,
+        "promptTokens": 20180,
+        "completionTokens": 16,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19818,
+        "retrieved": 0,
+        "content": "src/runtime/init.ts:648:E3497:panic_at_bootstrap",
+        "latencyMs": 11997,
+        "promptTokens": 20105,
+        "completionTokens": 16,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 42,
+          "finalContextTokens": 22078,
+          "remainingRawMessages": 32,
+          "summaryCount": 42
+        },
+        "retrieved": 0,
+        "ctxTokens": 20000,
+        "content": "src/runtime/init.ts:648:E3497:panic_at_bootstrap",
+        "latencyMs": 7560,
+        "promptTokens": 20181,
+        "completionTokens": 16,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-99",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "scripts/release-cut.sh:721:E8477:memory_leak_in_summarize",
+      "modeA": {
+        "ctxTokens": 19817,
+        "content": "src/runtime/init.ts:648:E3497:panic_at_bootstrap",
+        "latencyMs": 32270,
+        "promptTokens": 20100,
+        "completionTokens": 16,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 25,
+          "finalContextTokens": 21992,
+          "remainingRawMessages": 32,
+          "summaryCount": 25
+        },
+        "ctxTokens": 20000,
+        "content": "scripts/release-cut.sh:721:E8477:memory_leak_in_summarize",
+        "latencyMs": 6112,
+        "promptTokens": 20180,
+        "completionTokens": 18,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19817,
+        "retrieved": 0,
+        "content": "scripts/release-cut.sh:721:E8477:memory_leak_in_summarize",
+        "latencyMs": 6209,
+        "promptTokens": 20105,
+        "completionTokens": 18,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 25,
+          "finalContextTokens": 21992,
+          "remainingRawMessages": 32,
+          "summaryCount": 25
+        },
+        "retrieved": 0,
+        "ctxTokens": 20000,
+        "content": "scripts/release-cut.sh:721:E8477:memory_leak_in_summarize",
+        "latencyMs": 7597,
+        "promptTokens": 20181,
+        "completionTokens": 18,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-100",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "tools/migrations/0042_add_fts5.sql:865:E9275:panic_at_bootstrap",
+      "modeA": {
+        "ctxTokens": 19812,
+        "content": "scripts/release-cut.sh:721:E8477:memory_leak_in_summarize",
+        "latencyMs": 7473,
+        "promptTokens": 20100,
+        "completionTokens": 18,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 28,
+          "finalContextTokens": 22003,
+          "remainingRawMessages": 32,
+          "summaryCount": 28
+        },
+        "ctxTokens": 20000,
+        "content": "tools/migrations/0042_add_fts5.sql:865:E9275:panic_at_bootstrap",
+        "latencyMs": 7156,
+        "promptTokens": 20180,
+        "completionTokens": 19,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19812,
+        "retrieved": 0,
+        "content": "tools/migrations/0042_add_fts5.sql:865:E9275:panic_at_bootstrap",
+        "latencyMs": 8577,
+        "promptTokens": 20105,
+        "completionTokens": 19,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 28,
+          "finalContextTokens": 22003,
+          "remainingRawMessages": 32,
+          "summaryCount": 28
+        },
+        "retrieved": 0,
+        "ctxTokens": 20000,
+        "content": "tools/migrations/0042_add_fts5.sql:865:E9275:panic_at_bootstrap",
+        "latencyMs": 8057,
+        "promptTokens": 20181,
+        "completionTokens": 19,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-101",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "tests/e2e/login.spec.ts:175:E8275:deadlock_on_session_lock",
+      "modeA": {
+        "ctxTokens": 19817,
+        "content": "tools/migrations/0042_add_fts5.sql:865:E9275:panic_at_bootstrap",
+        "latencyMs": 17364,
+        "promptTokens": 20101,
+        "completionTokens": 19,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 24,
+          "finalContextTokens": 21989,
+          "remainingRawMessages": 32,
+          "summaryCount": 24
+        },
+        "ctxTokens": 20000,
+        "content": "tests/e2e/login.spec.ts:175:E8275:deadlock_on_session_lock",
+        "latencyMs": 34921,
+        "promptTokens": 20180,
+        "completionTokens": 18,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19817,
+        "retrieved": 0,
+        "content": "tests/e2e/login.spec.ts:175:E8275:deadlock_on_session_lock",
+        "latencyMs": 7362,
+        "promptTokens": 20106,
+        "completionTokens": 18,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 24,
+          "finalContextTokens": 21989,
+          "remainingRawMessages": 32,
+          "summaryCount": 24
+        },
+        "retrieved": 0,
+        "ctxTokens": 20000,
+        "content": "tests/e2e/login.spec.ts:175:E8275:deadlock_on_session_lock",
+        "latencyMs": 5963,
+        "promptTokens": 20181,
+        "completionTokens": 18,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-102",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "frontend/src/app/Page.tsx:762:E1340:memory_leak_in_summarize",
+      "modeA": {
+        "ctxTokens": 19819,
+        "content": "tests/e2e/login.spec.ts:175:E8275:deadlock_on_session_lock",
+        "latencyMs": 5984,
+        "promptTokens": 20100,
+        "completionTokens": 18,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 36,
+          "finalContextTokens": 22049,
+          "remainingRawMessages": 32,
+          "summaryCount": 36
+        },
+        "ctxTokens": 20000,
+        "content": "frontend/src/app/Page.tsx:762:E1340:memory_leak_in_summarize",
+        "latencyMs": 6503,
+        "promptTokens": 20180,
+        "completionTokens": 19,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19819,
+        "retrieved": 0,
+        "content": "frontend/src/app/Page.tsx:762:E1340:memory_leak_in_summarize",
+        "latencyMs": 7986,
+        "promptTokens": 20105,
+        "completionTokens": 19,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 36,
+          "finalContextTokens": 22049,
+          "remainingRawMessages": 32,
+          "summaryCount": 36
+        },
+        "retrieved": 0,
+        "ctxTokens": 20000,
+        "content": "frontend/src/app/Page.tsx:762:E1340:memory_leak_in_summarize",
+        "latencyMs": 6723,
+        "promptTokens": 20181,
+        "completionTokens": 19,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-103",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "tools/migrations/0042_add_fts5.sql:162:E8615:panic_at_bootstrap",
+      "modeA": {
+        "ctxTokens": 19816,
+        "content": "frontend/src/app/Page.tsx:762:E1340:memory_leak_in_summarize",
+        "latencyMs": 12333,
+        "promptTokens": 20101,
+        "completionTokens": 19,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 45,
+          "finalContextTokens": 22091,
+          "remainingRawMessages": 32,
+          "summaryCount": 45
+        },
+        "ctxTokens": 20000,
+        "content": "tools/migrations/0042_add_fts5.sql:162:E8615:panic_at_bootstrap",
+        "latencyMs": 10441,
+        "promptTokens": 20180,
+        "completionTokens": 19,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19816,
+        "retrieved": 0,
+        "content": "tools/migrations/0042_add_fts5.sql:162:E8615:panic_at_bootstrap",
+        "latencyMs": 36599,
+        "promptTokens": 20106,
+        "completionTokens": 19,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 45,
+          "finalContextTokens": 22091,
+          "remainingRawMessages": 32,
+          "summaryCount": 45
+        },
+        "retrieved": 0,
+        "ctxTokens": 20000,
+        "content": "tools/migrations/0042_add_fts5.sql:162:E8615:panic_at_bootstrap",
+        "latencyMs": 10620,
+        "promptTokens": 20181,
+        "completionTokens": 19,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-104",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "frontend/src/app/Page.tsx:335:E4208:race_condition_in_resolveProvider",
+      "modeA": {
+        "ctxTokens": 19817,
+        "content": "tools/migrations/0042_add_fts5.sql:162:E8615:panic_at_bootstrap",
+        "latencyMs": 7436,
+        "promptTokens": 20102,
+        "completionTokens": 19,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 46,
+          "finalContextTokens": 22099,
+          "remainingRawMessages": 32,
+          "summaryCount": 46
+        },
+        "ctxTokens": 20000,
+        "content": "frontend/src/app/Page.tsx:335:E4208:race_condition_in_resolveProvider",
+        "latencyMs": 12318,
+        "promptTokens": 20180,
+        "completionTokens": 21,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19817,
+        "retrieved": 0,
+        "content": "frontend/src/app/Page.tsx:335:E4208:race_condition_in_resolveProvider",
+        "latencyMs": 8080,
+        "promptTokens": 20107,
+        "completionTokens": 21,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 46,
+          "finalContextTokens": 22099,
+          "remainingRawMessages": 32,
+          "summaryCount": 46
+        },
+        "retrieved": 0,
+        "ctxTokens": 20000,
+        "content": "frontend/src/app/Page.tsx:335:E4208:race_condition_in_resolveProvider",
+        "latencyMs": 7510,
+        "promptTokens": 20182,
+        "completionTokens": 21,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-105",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "infra/k8s/clawbot.yaml:172:E8838:null_deref_in_assemble",
+      "modeA": {
+        "ctxTokens": 19815,
+        "content": "frontend/src/app/Page.tsx:335:E4208:race_condition_in_resolveProvider",
+        "latencyMs": 6412,
+        "promptTokens": 20101,
+        "completionTokens": 21,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 37,
+          "finalContextTokens": 22050,
+          "remainingRawMessages": 32,
+          "summaryCount": 37
+        },
+        "ctxTokens": 20000,
+        "content": "infra/k8s/clawbot.yaml:172:E8838:null_deref_in_assemble",
+        "latencyMs": 7998,
+        "promptTokens": 20180,
+        "completionTokens": 17,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19815,
+        "retrieved": 0,
+        "content": "infra/k8s/clawbot.yaml:172:E8838:null_deref_in_assemble",
+        "latencyMs": 8008,
+        "promptTokens": 20106,
+        "completionTokens": 17,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 37,
+          "finalContextTokens": 22050,
+          "remainingRawMessages": 32,
+          "summaryCount": 37
+        },
+        "retrieved": 0,
+        "ctxTokens": 20000,
+        "content": "infra/k8s/clawbot.yaml:172:E8838:null_deref_in_assemble",
+        "latencyMs": 30010,
+        "promptTokens": 20182,
+        "completionTokens": 17,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-106",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "infra/k8s/clawbot.yaml:878:E7619:panic_at_bootstrap",
+      "modeA": {
+        "ctxTokens": 19814,
+        "content": "infra/k8s/clawbot.yaml:172:E8838:null_deref_in_assemble",
+        "latencyMs": 8963,
+        "promptTokens": 20099,
+        "completionTokens": 17,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 38,
+          "finalContextTokens": 22054,
+          "remainingRawMessages": 32,
+          "summaryCount": 38
+        },
+        "ctxTokens": 20000,
+        "content": "infra/k8s/clawbot.yaml:878:E7619:panic_at_bootstrap",
+        "latencyMs": 7002,
+        "promptTokens": 20180,
+        "completionTokens": 16,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19814,
+        "retrieved": 0,
+        "content": "infra/k8s/clawbot.yaml:878:E7619:panic_at_bootstrap",
+        "latencyMs": 10456,
+        "promptTokens": 20104,
+        "completionTokens": 16,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 38,
+          "finalContextTokens": 22054,
+          "remainingRawMessages": 32,
+          "summaryCount": 38
+        },
+        "retrieved": 0,
+        "ctxTokens": 20000,
+        "content": "infra/k8s/clawbot.yaml:878:E7619:panic_at_bootstrap",
+        "latencyMs": 6717,
+        "promptTokens": 20181,
+        "completionTokens": 16,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-107",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "tests/e2e/login.spec.ts:54:E2548:memory_leak_in_summarize",
+      "modeA": {
+        "ctxTokens": 19817,
+        "content": "infra/k8s/clawbot.yaml:878:E7619:panic_at_bootstrap",
+        "latencyMs": 7753,
+        "promptTokens": 20104,
+        "completionTokens": 16,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 22,
+          "finalContextTokens": 21976,
+          "remainingRawMessages": 32,
+          "summaryCount": 22
+        },
+        "ctxTokens": 20000,
+        "content": "tests/e2e/login.spec.ts:54:E2548:memory_leak_in_summarize",
+        "latencyMs": 6949,
+        "promptTokens": 20180,
+        "completionTokens": 18,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19817,
+        "retrieved": 0,
+        "content": "tests/e2e/login.spec.ts:54:E2548:memory_leak_in_summarize",
+        "latencyMs": 20625,
+        "promptTokens": 20109,
+        "completionTokens": 18,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 22,
+          "finalContextTokens": 21976,
+          "remainingRawMessages": 32,
+          "summaryCount": 22
+        },
+        "retrieved": 0,
+        "ctxTokens": 20000,
+        "content": "tests/e2e/login.spec.ts:54:E2548:memory_leak_in_summarize",
+        "latencyMs": 10915,
+        "promptTokens": 20182,
+        "completionTokens": 18,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-108",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "frontend/src/app/Page.tsx:253:E6481:race_condition_in_resolveProvider",
+      "modeA": {
+        "ctxTokens": 19821,
+        "content": "infra/k8s/clawbot.yaml:172:E8838:null_deref_in_assemble",
+        "latencyMs": 36924,
+        "promptTokens": 20105,
+        "completionTokens": 17,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 39,
+          "finalContextTokens": 22065,
+          "remainingRawMessages": 32,
+          "summaryCount": 39
+        },
+        "ctxTokens": 20000,
+        "content": "frontend/src/app/Page.tsx:253:E6481:race_condition_in_resolveProvider",
+        "latencyMs": 7893,
+        "promptTokens": 20180,
+        "completionTokens": 21,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19821,
+        "retrieved": 0,
+        "content": "frontend/src/app/Page.tsx:253:E6481:race_condition_in_resolveProvider",
+        "latencyMs": 7769,
+        "promptTokens": 20110,
+        "completionTokens": 21,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 39,
+          "finalContextTokens": 22065,
+          "remainingRawMessages": 32,
+          "summaryCount": 39
+        },
+        "retrieved": 0,
+        "ctxTokens": 20000,
+        "content": "",
+        "latencyMs": 19194,
+        "error": "HTTP 500: {\"error\":\"Command failed: openclaw infer model run --gateway --model openai-codex/gpt-5.4-mini --prompt SYSTEM:\\nYou are a precise question-answering assistant. Answer using ONLY the information present in the conversation context. Reply with a JSON object: {\\\"answer\\\": <string>}. Output the requested value verbatim in the answer field — no extra commentary, no labels, no preamble. If the context ",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-109",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "scripts/release-cut.sh:713:E8740:race_condition_in_resolveProvider",
+      "modeA": {
+        "ctxTokens": 19817,
+        "content": "frontend/src/app/Page.tsx:253:E6481:race_condition_in_resolveProvider",
+        "latencyMs": 11039,
+        "promptTokens": 20102,
+        "completionTokens": 21,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 23,
+          "finalContextTokens": 21983,
+          "remainingRawMessages": 32,
+          "summaryCount": 23
+        },
+        "ctxTokens": 20000,
+        "content": "scripts/release-cut.sh:713:E8740:race_condition_in_resolveProvider",
+        "latencyMs": 6471,
+        "promptTokens": 20180,
+        "completionTokens": 20,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 19817,
+        "retrieved": 0,
+        "content": "scripts/release-cut.sh:713:E8740:race_condition_in_resolveProvider",
+        "latencyMs": 6098,
+        "promptTokens": 20107,
+        "completionTokens": 20,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 23,
+          "finalContextTokens": 21983,
+          "remainingRawMessages": 32,
+          "summaryCount": 23
+        },
+        "retrieved": 0,
+        "ctxTokens": 20000,
+        "content": "scripts/release-cut.sh:713:E8740:race_condition_in_resolveProvider",
+        "latencyMs": 7339,
+        "promptTokens": 20181,
+        "completionTokens": 20,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    }
+  ],
+  "avgLatencyMs": 11370.520454545454
+}
