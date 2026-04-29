@@ -16,10 +16,16 @@ Recommendation: **install/pilot behind a feature flag or isolated profile**, the
 - Noise leaks: **0**
 - Stale leaks: **0**
 
-- A baseline: **2/110 = 1.8%**
-- B Lossless: **108/110 = 98.2%**
-- C simulated memory: **110/110 = 100.0%**
-- D combined: **109/110 = 99.1%**
+- A baseline: **2/110 measured = 1.8%**
+- B Lossless: **108/110 measured = 98.2%**
+- C simulated memory: **110/110 measured = 100.0%**
+- D combined: **109/110 measured = 99.1%**; **109/109 answered = 100%** (1 infra/runtime failed call)
+
+
+
+### Denominator note
+
+Scores with transport/runtime failures must not be interpreted as semantic wrong answers. The primary table keeps the measured denominator (`/110`) for reproducibility, but quality interpretation should use answered-call denominator when a mode failed before producing content. For gpt-5.4-mini D, the single miss was `verbatim-108` with HTTP 500 / empty content; B and C answered that same probe correctly. Therefore D is **109/110 measured**, but **109/109 answered correctly**.
 
 ## Gemma evidence
 
