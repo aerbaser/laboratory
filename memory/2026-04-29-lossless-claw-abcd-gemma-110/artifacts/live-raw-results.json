@@ -1,0 +1,2499 @@
+{
+  "startedAt": "2026-04-29T09:45:26.026Z",
+  "finishedAt": "2026-04-29T09:54:21.974Z",
+  "stage": "full",
+  "model": "gemma4-31b",
+  "ollamaUrl": "http://127.0.0.1:8089",
+  "probesDone": 40,
+  "probesPlanned": 40,
+  "contextBudget": 4000,
+  "totalCalls": 160,
+  "avgLatencyMs": 3338.61875,
+  "overall": {
+    "total": 40,
+    "hits": {
+      "A": 0,
+      "B": 7,
+      "C": 7,
+      "D": 6
+    },
+    "noiseLeaks": {
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "staleLeaks": {
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    },
+    "latency": {
+      "A": 97915,
+      "B": 116833,
+      "C": 104768,
+      "D": 214663
+    }
+  },
+  "byCat": {
+    "long": {
+      "total": 0,
+      "hits": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "noiseLeaks": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "staleLeaks": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "latency": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    },
+    "conflict": {
+      "total": 0,
+      "hits": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "noiseLeaks": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "staleLeaks": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "latency": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    },
+    "stale": {
+      "total": 0,
+      "hits": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "noiseLeaks": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "staleLeaks": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "latency": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    },
+    "noise": {
+      "total": 0,
+      "hits": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "noiseLeaks": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "staleLeaks": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "latency": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    },
+    "multihop": {
+      "total": 10,
+      "hits": {
+        "A": 0,
+        "B": 7,
+        "C": 7,
+        "D": 6
+      },
+      "noiseLeaks": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "staleLeaks": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "latency": {
+        "A": 97898,
+        "B": 116793,
+        "C": 104753,
+        "D": 214625
+      }
+    },
+    "verbatim": {
+      "total": 30,
+      "hits": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "noiseLeaks": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "staleLeaks": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "latency": {
+        "A": 17,
+        "B": 40,
+        "C": 15,
+        "D": 38
+      }
+    }
+  },
+  "results": [
+    {
+      "probeId": "multihop-70",
+      "category": "multihop",
+      "question": "Which city and which file are linked to the migration?",
+      "idealAnswer": "Lima",
+      "modeA": {
+        "ctxTokens": 3418,
+        "content": "unknown",
+        "thinking": "The user wants to know which city and which file are linked to the \"migration\" based on the provided text.\n\n    *   [ASSISTANT #376]: Topic: billing, City: Seoul, Color tag: ivory.\n    *   [USER #377]: Topic: auth, City: Riga, Color tag: teal.\n    *   [ASSISTANT #378]: Topic: infra, City: Berlin, Color tag: violet.\n    *   [USER #379]: Topic: data, City: Oslo, Color tag: teal.\n    *   [ASSISTANT #380]: Topic: infra, City: Berlin, Color tag: rust.\n\n    *   I am looking for \"migration\".\n    *   Scanning the text...\n    *   [ASSISTANT #376]: \"Discussion turn 375 on topic billing. Reviewing notes from Seoul prep. Prior color tag: ivory. lorem ipsum...\"\n    *   [USER #377]: \"Discussion turn 376 on topic auth. Reviewing notes from Riga prep. Prior color tag: teal. lorem ipsum...\"\n    *   [ASSISTANT #378]: \"Discussion turn 377 on topic infra. Reviewing notes from Berlin prep. Prior color tag: violet. lorem ipsum...\"\n    *   [USER #379]: \"Discussion turn 378 on topic data. Reviewing notes from Oslo prep. Prior color tag: teal. lorem ipsum...\"\n    *   [ASSISTANT #380]: \"Discussion turn 379 on topic infra. Reviewing notes from Berlin prep. Prior color tag: rust. lorem ipsum...\"\n\n    *   The word \"migration\" does not appear in the provided text.\n    *   The word \"file\" does not appear in the provided text.\n\nSince the information is not present in the context, the answer should be \"unknown\".",
+        "latencyMs": 17219,
+        "promptTokens": 2236,
+        "completionTokens": 432,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 44,
+          "finalContextTokens": 22109,
+          "remainingRawMessages": 32,
+          "summaryCount": 44
+        },
+        "ctxTokens": 4000,
+        "content": "city: Lima, file: src/runtime/init.ts",
+        "thinking": "The user wants to know the city and the file linked to the migration based on the provided context.\n\n    *   `(msg #344) [fact-mhb-70] migration_file=src/runtime/init.ts`\n    *   `(msg #125) [fact-mha-70] migration_city=Lima`\n    *   `(summary) Summary (depth=0): [fact-mha-70] migration_city=Lima`\n    *   `(summary) Summary (depth=0): [fact-mhb-70] migration_file=src/runtime/init.ts`\n\n    *   `migration_city`: Lima\n    *   `migration_file`: src/runtime/init.ts\n\nThe question asks for \"Which city and which file are linked to the migration?\".\n\n    *   City: Lima\n    *   File: src/runtime/init.ts\n\n    *   JSON object: `{\"answer\": \"city: Lima, file: src/runtime/init.ts\"}` or similar.\n    *   Wait, the prompt says \"Output the requested value verbatim in the answer field\".\n    *   The requested values are \"Lima\" and \"src/runtime/init.ts\".\n    *   Usually, for multiple values, a comma-separated list or a descriptive string is used. Let's look at the facts again.\n    *   `migration_city=Lima`\n    *   `migration_file=src/runtime/init.ts`\n\n    Let's combine them: \"Lima, src/runtime/init.ts\".",
+        "latencyMs": 15870,
+        "promptTokens": 2676,
+        "completionTokens": 380,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3418,
+        "retrieved": 2,
+        "content": "Lima, src/runtime/init.ts",
+        "thinking": "The user wants to know the city and the file linked to the \"migration\".\n\n    *   `(seq 344) [fact-mhb-70] migration_file=src/runtime/init.ts`\n    *   `(seq 125) [fact-mha-70] migration_city=Lima`\n    *   The conversation logs (turns 375-379) contain \"lorem ipsum\" text and some metadata (topic, prep city, color tag), but no mention of \"migration_file\" or \"migration_city\".\n\n    *   `migration_file`: `src/runtime/init.ts`\n    *   `migration_city`: `Lima`\n\nThe question asks for \"Which city and which file are linked to the migration?\".\n    *   City: Lima\n    *   File: src/runtime/init.ts\n\n    *   JSON object: `{\"answer\": \"Lima, src/runtime/init.ts\"}` or similar.\n    *   Wait, the prompt says \"Output the requested value verbatim in the answer field\".\n    *   The requested values are \"Lima\" and \"src/runtime/init.ts\".\n\n    Let's check if there are any other mentions of migration in the conversation.\n    - Turn 375: Seoul prep, billing.\n    - Turn 376: Riga prep, auth.\n    - Turn 377: Berlin prep, infra.\n    - Turn 378: Oslo prep, data.\n    - Turn 379: Berlin prep, infra.\n    None of these mention migration.\n\n    The memory records are:\n    - `migration_file=src/runtime/init.ts`\n    - `migration_city=Lima`\n\n    Combine them: \"Lima, src/runtime/init.ts\" or \"Lima and src/runtime/init.ts\". Usually, a comma-separated list or a descriptive phrase is used. Let's look at the prompt again: \"Which city and which file are linked to the migration?\".\n\n    Answer: Lima, src/runtime/init.ts.",
+        "latencyMs": 19107,
+        "promptTokens": 2297,
+        "completionTokens": 490,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 44,
+          "finalContextTokens": 22109,
+          "remainingRawMessages": 32,
+          "summaryCount": 44
+        },
+        "retrieved": 2,
+        "ctxTokens": 3999,
+        "content": "Lima, src/runtime/init.ts",
+        "thinking": "The user wants to know the city and the file linked to the migration.\n\n    *   `[memory store top-2]`\n        *   `(seq 343) [fact-mhb-70] migration_file=src/runtime/init.ts`\n        *   `(seq 124) [fact-mha-70] migration_city=Lima`\n    *   `[lcm_grep results top-4]`\n        *   `(msg #344) [fact-mhb-70] migration_file=src/runtime/init.ts`\n        *   `(msg #125) [fact-mha-70] migration_city=Lima`\n        *   `(summary) Summary (depth=0): [fact-mha-70] migration_city=Lima`\n        *   `(summary) Summary (depth=0): [fact-mhb-70] migration_file=src/runtime/init.ts`\n\n    *   Migration city: Lima\n    *   Migration file: src/runtime/init.ts\n\nThe question asks for \"Which city and which file\".\n    *   City: Lima\n    *   File: src/runtime/init.ts\n\n    *   JSON format: `{\"answer\": \"Lima, src/runtime/init.ts\"}` or similar.\n    *   Wait, the prompt asks for the requested value verbatim.\n    *   City = Lima\n    *   File = src/runtime/init.ts\n\n    Let's check if there are any other mentions.\n    - Discussion turn 343: Lima prep.\n    - Discussion turn 124: Manila prep. (But the fact `[fact-mha-70]` says `migration_city=Lima`).\n    - Discussion turn 375: Seoul prep.\n    - Discussion turn 376: Riga prep.\n    - Discussion turn 377: Berlin prep.\n    - Discussion turn 378: Oslo prep.\n    - Discussion turn 379: Berlin prep.\n\n    The explicit facts are:\n    `migration_city=Lima`\n    `migration_file=src/runtime/init.ts`\n\n    The question asks \"Which city and which file are linked to the migration?\".\n    Answer: Lima and src/runtime/init.ts.",
+        "latencyMs": 21358,
+        "promptTokens": 2716,
+        "completionTokens": 547,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "multihop-71",
+      "category": "multihop",
+      "question": "Which city and which file are linked to the migration?",
+      "idealAnswer": "Oslo",
+      "modeA": {
+        "ctxTokens": 3417,
+        "content": "unknown",
+        "thinking": "The user wants to know which city and which file are linked to the \"migration\" based on the provided text.\n\n    *   [USER #273]: Topic: build, City: Oslo, Color tag: slate.\n    *   [ASSISTANT #274]: Topic: ui, City: Dublin, Color tag: amber.\n    *   [USER #275]: Topic: auth, City: Riga, Color tag: violet.\n    *   [ASSISTANT #276]: Topic: metrics, City: Dublin, Color tag: slate.\n    *   [USER #277]: Topic: infra, City: Manila, Color tag: ochre.\n\n    *   I am looking for \"migration\" and a \"file\".\n    *   Scanning the text for \"migration\": Not found.\n    *   Scanning the text for \"file\": Not found.\n\nThe information is not present in the provided context.",
+        "latencyMs": 10306,
+        "promptTokens": 2235,
+        "completionTokens": 219,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 31,
+          "finalContextTokens": 22045,
+          "remainingRawMessages": 32,
+          "summaryCount": 31
+        },
+        "ctxTokens": 4000,
+        "content": "Oslo, src/runtime/init.ts",
+        "thinking": "The user wants to know the city and the file linked to the migration based on the provided context.\n\n    *   `(msg #245) [fact-mhb-71] migration_file=src/runtime/init.ts`\n    *   `(msg #74) [fact-mha-71] migration_city=Oslo`\n    *   `(summary) Summary (depth=0): [fact-mha-71] migration_city=Oslo`\n    *   `(summary) Summary (depth=0): [fact-mhb-71] migration_file=src/runtime/init.ts`\n\n    *   Migration city: Oslo\n    *   Migration file: src/runtime/init.ts\n\nThe question asks for \"Which city and which file\".\n\n    *   City: Oslo\n    *   File: src/runtime/init.ts\n\n    *   JSON object: `{\"answer\": \"Oslo, src/runtime/init.ts\"}` (or similar phrasing). Let's check if there's a specific format. The prompt says \"Return only the answer value as JSON\".\n\n    *   City: Oslo\n    *   File: src/runtime/init.ts\n    *   Combined: Oslo, src/runtime/init.ts",
+        "latencyMs": 13525,
+        "promptTokens": 2675,
+        "completionTokens": 308,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3417,
+        "retrieved": 2,
+        "content": "Oslo, src/runtime/init.ts",
+        "thinking": "The user wants to know the city and the file linked to the \"migration\".\n\n    *   `(seq 245) [fact-mhb-71] migration_file=src/runtime/init.ts`\n    *   `(seq 74) [fact-mha-71] migration_city=Oslo`\n    *   Conversation turns:\n        *   [USER #273]: Reviewing notes from Oslo prep.\n        *   [ASSISTANT #274]: Reviewing notes from Dublin prep.\n        *   [USER #275]: Reviewing notes from Riga prep.\n        *   [ASSISTANT #276]: Reviewing notes from Dublin prep.\n        *   [USER #277]: Reviewing notes from Manila prep.\n\n    *   `migration_file` = `src/runtime/init.ts`\n    *   `migration_city` = `Oslo`\n\nThe question asks for \"Which city and which file are linked to the migration?\".\n\n    *   City: Oslo\n    *   File: src/runtime/init.ts\n\n    *   JSON format: `{\"answer\": \"Oslo, src/runtime/init.ts\"}` or similar. Let's check if there's a specific format requested. \"Answer with only the requested value.\"\n\n    *   City: Oslo\n    *   File: src/runtime/init.ts\n    *   Combined: Oslo and src/runtime/init.ts.",
+        "latencyMs": 14856,
+        "promptTokens": 2296,
+        "completionTokens": 354,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 31,
+          "finalContextTokens": 22045,
+          "remainingRawMessages": 32,
+          "summaryCount": 31
+        },
+        "retrieved": 2,
+        "ctxTokens": 4000,
+        "content": "Oslo, src/runtime/init.ts",
+        "thinking": "The user wants to know the city and the file linked to the migration.\n\n    *   `[fact-mhb-71] migration_file=src/runtime/init.ts` (seq 244)\n    *   `[fact-mha-71] migration_city=Oslo` (seq 73)\n    *   `[fact-mhb-71] migration_file=src/runtime/init.ts` (msg #245)\n    *   `[fact-mha-71] migration_city=Oslo` (msg #74)\n    *   Summary: `[fact-mha-71] migration_city=Oslo`\n    *   Summary: `[fact-mhb-71] migration_file=src/runtime/init.ts`\n\n    *   Migration city: Oslo\n    *   Migration file: src/runtime/init.ts\n\nThe question asks for \"Which city and which file\".\n    *   City: Oslo\n    *   File: src/runtime/init.ts\n\n    Combine them: \"Oslo, src/runtime/init.ts\" or similar. The prompt asks for the requested value.\n\n    Let's check for any more recent values.\n    - `migration_file=src/runtime/init.ts` (seq 244)\n    - `migration_city=Oslo` (seq 73)\n    No other values for these specific keys are provided in the context.\n\n    Final Answer: Oslo, src/runtime/init.ts",
+        "latencyMs": 15851,
+        "promptTokens": 2716,
+        "completionTokens": 374,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "multihop-72",
+      "category": "multihop",
+      "question": "Which city and which file are linked to the migration?",
+      "idealAnswer": "Oslo",
+      "modeA": {
+        "ctxTokens": 3417,
+        "content": "unknown",
+        "thinking": "The user wants to know which city and which file are linked to the \"migration\" based on the provided text.\n\n    *   [ASSISTANT #228]: Topic: build, City: Seoul, Color tag: rose.\n    *   [USER #229]: Topic: build, City: Manila, Color tag: ivory.\n    *   [ASSISTANT #230]: Topic: infra, City: Manila, Color tag: rust.\n    *   [USER #231]: Topic: auth, City: Seoul, Color tag: sage.\n    *   [ASSISTANT #232]: Topic: infra, City: Riga, Color tag: amber.\n\n    *   I am looking for \"migration\" and a \"file\".\n    *   Scanning the text...\n    *   The text consists of headers (Assistant/User ID, Discussion turn, topic, city prep, color tag) followed by \"lorem ipsum\" filler text.\n    *   There is no mention of \"migration\" or any specific \"file\" in the provided text.\n\nThe answer is not present in the context.",
+        "latencyMs": 11650,
+        "promptTokens": 2236,
+        "completionTokens": 258,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 25,
+          "finalContextTokens": 22016,
+          "remainingRawMessages": 32,
+          "summaryCount": 25
+        },
+        "ctxTokens": 4000,
+        "content": "city: Oslo, file: src/runtime/init.ts",
+        "thinking": "The user wants to know the city and the file linked to the migration based on the provided context.\n\n    *   `(msg #160) [fact-mhb-72] migration_file=src/runtime/init.ts`\n    *   `(msg #48) [fact-mha-72] migration_city=Oslo`\n    *   `(summary) Summary (depth=0): [fact-mha-72] migration_city=Oslo`\n    *   `(summary) Summary (depth=0): [fact-mhb-72] migration_file=src/runtime/init.ts`\n\n    *   `migration_city`: Oslo\n    *   `migration_file`: src/runtime/init.ts\n\nThe question asks for \"Which city and which file are linked to the migration?\".\n\n    *   City: Oslo\n    *   File: src/runtime/init.ts\n\n    *   JSON object: `{\"answer\": \"city: Oslo, file: src/runtime/init.ts\"}` or similar.\n    *   Wait, the prompt says \"Output the requested value verbatim in the answer field\".\n    *   The requested values are \"Oslo\" and \"src/runtime/init.ts\".\n    *   Usually, for multiple values, a comma-separated list or a descriptive string is used. Let's look at the prompt again: \"Which city and which file are linked to the migration?\".\n\n    *   City = Oslo\n    *   File = src/runtime/init.ts\n\n    Let's format it clearly. \"Oslo, src/runtime/init.ts\" or \"city: Oslo, file: src/runtime/init.ts\".\n    Actually, looking at the facts:\n    `migration_city=Oslo`\n    `migration_file=src/runtime/init.ts`\n\n    The answer should be \"Oslo, src/runtime/init.ts\".",
+        "latencyMs": 18586,
+        "promptTokens": 2675,
+        "completionTokens": 456,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3417,
+        "retrieved": 2,
+        "content": "Oslo, src/runtime/init.ts",
+        "thinking": "The user wants to know the city and the file linked to the \"migration\".\n\n    *   `(seq 160) [fact-mhb-72] migration_file=src/runtime/init.ts`\n    *   `(seq 48) [fact-mha-72] migration_city=Oslo`\n    *   The conversation turns (227-231) contain \"lorem ipsum\" text and mentions of \"Seoul prep\", \"Manila prep\", and \"Riga prep\", but no specific \"migration_city\" or \"migration_file\" updates.\n\n    *   `migration_file`: `src/runtime/init.ts`\n    *   `migration_city`: `Oslo`\n\nThe question asks for \"Which city and which file\".\n    *   City: Oslo\n    *   File: src/runtime/init.ts\n\n    *   JSON object: `{\"answer\": \"Oslo, src/runtime/init.ts\"}` or similar. Let's check if there's a specific format. The prompt says \"Return only the answer value as JSON\".\n\n    *   `migration_city=Oslo`\n    *   `migration_file=src/runtime/init.ts`\n\n    Combine them: \"Oslo, src/runtime/init.ts\" or \"Oslo and src/runtime/init.ts\". Usually, a comma-separated list or a clear statement is best.\n\n    Wait, let me re-read the prompt: \"Which city and which file are linked to the migration?\"\n    City: Oslo\n    File: src/runtime/init.ts\n\n    Result: `{\"answer\": \"Oslo, src/runtime/init.ts\"}`",
+        "latencyMs": 16370,
+        "promptTokens": 2297,
+        "completionTokens": 403,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 25,
+          "finalContextTokens": 22016,
+          "remainingRawMessages": 32,
+          "summaryCount": 25
+        },
+        "retrieved": 2,
+        "ctxTokens": 4000,
+        "content": "Oslo, src/runtime/init.ts",
+        "thinking": "The user wants to know the city and the file linked to the migration.\n\n    *   `[memory store top-2]`\n        *   `(seq 159) [fact-mhb-72] migration_file=src/runtime/init.ts`\n        *   `(seq 47) [fact-mha-72] migration_city=Oslo`\n    *   `[lcm_grep results top-4]`\n        *   `(msg #160) [fact-mhb-72] migration_file=src/runtime/init.ts`\n        *   `(msg #48) [fact-mha-72] migration_city=Oslo`\n        *   `(summary) Summary (depth=0): [fact-mha-72] migration_city=Oslo`\n        *   `(summary) Summary (depth=0): [fact-mhb-72] migration_file=src/runtime/init.ts`\n\n    *   Migration city: Oslo\n    *   Migration file: src/runtime/init.ts\n\nThe question asks for \"Which city and which file\".\n    *   City: Oslo\n    *   File: src/runtime/init.ts\n\n    Combine them into a string. \"Oslo, src/runtime/init.ts\" or similar. The prompt asks for the requested value.\n\n    Let's check for any conflicting facts.\n    - `migration_city=Oslo` (seq 47, msg #48, summary)\n    - `migration_file=src/runtime/init.ts` (seq 159, msg #160, summary)\n    No conflicts.\n\n    The answer should be a JSON object: `{\"answer\": \"Oslo, src/runtime/init.ts\"}`. Wait, usually, if it asks for two things, I should list both.\n\n    Let's re-read: \"Which city and which file are linked to the migration?\"\n    City: Oslo\n    File: src/runtime/init.ts\n\n    Final Answer: Oslo, src/runtime/init.ts",
+        "latencyMs": 20001,
+        "promptTokens": 2716,
+        "completionTokens": 497,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "multihop-73",
+      "category": "multihop",
+      "question": "Which city and which file are linked to the migration?",
+      "idealAnswer": "Lima",
+      "modeA": {
+        "ctxTokens": 3419,
+        "content": "unknown",
+        "thinking": "The user wants to know which city and which file are linked to the \"migration\". I need to scan the provided text for the word \"migration\".\n\nLooking through the text:\n- [ASSISTANT #260]: topic build, Berlin prep, color tag rust.\n- [USER #261]: topic billing, Cairo prep, color tag rust.\n- [ASSISTANT #262]: topic ui, Lima prep, color tag slate.\n- [USER #263]: topic build, Quito prep, color tag amber.\n- [ASSISTANT #264]: topic metrics, Dublin prep, color tag rust.\n\nI don't see the word \"migration\" anywhere in the provided text.\n\nLet me double-check.\n- Berlin prep\n- Cairo prep\n- Lima prep\n- Quito prep\n- Dublin prep\n\nNone of these mention \"migration\".\n\nThe instruction says: \"If the answer is not present in the context, return {\"answer\":\"unknown\"}.\"",
+        "latencyMs": 10527,
+        "promptTokens": 2236,
+        "completionTokens": 228,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 29,
+          "finalContextTokens": 22043,
+          "remainingRawMessages": 32,
+          "summaryCount": 29
+        },
+        "ctxTokens": 4000,
+        "content": "city: Lima, file: infra/k8s/clawbot.yaml",
+        "thinking": "The user wants to know the city and the file linked to the migration based on the provided context.\n\n    *   `(msg #194) [fact-mhb-73] migration_file=infra/k8s/clawbot.yaml`\n    *   `(msg #29) [fact-mha-73] migration_city=Lima`\n    *   `(summary) Summary (depth=0): [fact-mha-73] migration_city=Lima`\n    *   `(summary) Summary (depth=0): [fact-mhb-73] migration_file=infra/k8s/clawbot.yaml`\n\n    *   Migration city: Lima\n    *   Migration file: infra/k8s/clawbot.yaml\n\nThe question asks for \"Which city and which file are linked to the migration?\".\n\n    *   City: Lima\n    *   File: infra/k8s/clawbot.yaml\n\n    Combine them into a string.\n\n    *   `{\"answer\": \"city: Lima, file: infra/k8s/clawbot.yaml\"}` or similar.\n    *   Wait, the prompt says \"Output the requested value verbatim in the answer field\".\n    *   The requested values are \"Lima\" and \"infra/k8s/clawbot.yaml\".\n\n    Let's check if there are any more recent values.\n    - `migration_file=infra/k8s/clawbot.yaml` (msg #194)\n    - `migration_city=Lima` (msg #29)\n    - Summaries repeat these.\n    - The conversation tail (turns 259-263) doesn't mention migration city or file.\n\n    So the values are Lima and infra/k8s/clawbot.yaml.\n\n    How to format the answer? \"Which city and which file...\".\n    Usually, if multiple values are requested, I should list them.\n\n    City: Lima\n    File: infra/k8s/clawbot.yaml\n\n    Let's format it clearly.\n    `{\"answer\": \"city: Lima, file: infra/k8s/clawbot.yaml\"}`\n\n    Wait, looking at the prompt \"Output the requested value verbatim\".\n    The values are \"Lima\" and \"infra/k8s/clawbot.yaml\".\n\n    Let's try: `{\"answer\": \"city: Lima, file: infra/k8s/clawbot.yaml\"}`. Or maybe just `{\"answer\": \"Lima, infra/k8s/clawbot.yaml\"}`.\n\n    Let's re-read the context.\n    `migration_city=Lima`\n    `migration_file=infra/k8s/clawbot.yaml`\n\n    I will provide both.",
+        "latencyMs": 24982,
+        "promptTokens": 2679,
+        "completionTokens": 651,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3419,
+        "retrieved": 2,
+        "content": "Lima, infra/k8s/clawbot.yaml",
+        "thinking": "The user wants to know the city and the file linked to the migration.\n\n    *   `(seq 194) [fact-mhb-73] migration_file=infra/k8s/clawbot.yaml`\n    *   `(seq 29) [fact-mha-73] migration_city=Lima`\n    *   Conversation turns:\n        *   Turn 259: Berlin prep\n        *   Turn 260: Cairo prep\n        *   Turn 261: Lima prep\n        *   Turn 262: Quito prep\n        *   Turn 263: Dublin prep\n\n    *   `migration_file`: `infra/k8s/clawbot.yaml`\n    *   `migration_city`: `Lima`\n\nThe question asks for \"Which city and which file are linked to the migration?\".\nThe answer should be \"Lima, infra/k8s/clawbot.yaml\" or similar.\n\nLet's check for any conflicting facts.\n- `migration_file` is only mentioned once.\n- `migration_city` is only mentioned once.\n\nThe answer is Lima and infra/k8s/clawbot.yaml.",
+        "latencyMs": 12847,
+        "promptTokens": 2299,
+        "completionTokens": 292,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 29,
+          "finalContextTokens": 22043,
+          "remainingRawMessages": 32,
+          "summaryCount": 29
+        },
+        "retrieved": 2,
+        "ctxTokens": 3999,
+        "content": "Lima, infra/k8s/clawbot.yaml",
+        "thinking": "The user wants to know the city and the file linked to the migration.\n\n    *   `[fact-mhb-73] migration_file=infra/k8s/clawbot.yaml` (seq 193)\n    *   `[fact-mha-73] migration_city=Lima` (seq 28)\n\n    *   `(msg #194) [fact-mhb-73] migration_file=infra/k8s/clawbot.yaml`\n    *   `(msg #29) [fact-mha-73] migration_city=Lima`\n    *   `(summary) Summary (depth=0): [fact-mha-73] migration_city=Lima`\n    *   `(summary) Summary (depth=0): [fact-mhb-73] migration_file=infra/k8s/clawbot.yaml`\n\n    *   City: Lima\n    *   File: infra/k8s/clawbot.yaml\n\nThe question asks \"Which city and which file are linked to the migration?\".\nThe answer should be \"Lima, infra/k8s/clawbot.yaml\" or similar.\n\nLet's check for any more recent values.\n- `migration_file` is `infra/k8s/clawbot.yaml` (seq 193).\n- `migration_city` is `Lima` (seq 28).\nNo other migration_city or migration_file values are present in the provided context.\n\nFinal Answer: Lima, infra/k8s/clawbot.yaml.",
+        "latencyMs": 16015,
+        "promptTokens": 2722,
+        "completionTokens": 380,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "multihop-74",
+      "category": "multihop",
+      "question": "Which city and which file are linked to the migration?",
+      "idealAnswer": "Seoul",
+      "modeA": {
+        "ctxTokens": 3417,
+        "content": "unknown",
+        "thinking": "The user is asking for the city and file linked to the \"migration\". I need to scan the provided text for the word \"migration\".\n\n    *   [ASSISTANT #216]: Topic: build. Notes: Quito prep. Color tag: amber.\n    *   [USER #217]: Topic: ops. Notes: Riga prep. Color tag: ochre.\n    *   [ASSISTANT #218]: Topic: infra. Notes: Seoul prep. Color tag: ivory.\n    *   [USER #219]: Topic: qa. Notes: Tokyo prep. Color tag: violet.\n    *   [ASSISTANT #220]: Topic: auth. Notes: Tokyo prep. Color tag: slate.\n\n    *   I searched for \"migration\" in the text.\n    *   The text consists of metadata (Assistant/User ID, Discussion turn, topic, notes from [City] prep, Prior color tag) followed by \"lorem ipsum\" filler text.\n    *   There is no mention of \"migration\" anywhere in the provided text.\n\nSince the answer is not present in the context, I must return `{\"answer\": \"unknown\"}`.",
+        "latencyMs": 11931,
+        "promptTokens": 2237,
+        "completionTokens": 272,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 24,
+          "finalContextTokens": 22006,
+          "remainingRawMessages": 32,
+          "summaryCount": 24
+        },
+        "ctxTokens": 4000,
+        "content": "Seoul, src/runtime/init.ts",
+        "thinking": "The user wants to know the city and the file linked to the migration based on the provided context.\n\n    *   `(msg #179) [fact-mhb-74] migration_file=src/runtime/init.ts`\n    *   `(msg #52) [fact-mha-74] migration_city=Seoul`\n    *   `(summary) Summary (depth=0): [fact-mha-74] migration_city=Seoul`\n    *   `(summary) Summary (depth=0): [fact-mhb-74] migration_file=src/runtime/init.ts`\n\n    *   `migration_city`: Seoul\n    *   `migration_file`: src/runtime/init.ts\n\nThe question asks for \"Which city and which file are linked to the migration?\".\n\n    *   City: Seoul\n    *   File: src/runtime/init.ts\n\n    *   JSON format: `{\"answer\": \"...\"}`\n    *   Combine the city and file.\n\n    *   City: Seoul\n    *   File: src/runtime/init.ts\n    *   Combined: Seoul, src/runtime/init.ts (or similar)\n\n    Wait, the prompt asks for \"Which city and which file\". I should provide both.\n\n    Let's check for any more recent values.\n    - `migration_city=Seoul` (msg #52)\n    - `migration_file=src/runtime/init.ts` (msg #179)\n    - Summaries repeat these.\n    - The conversation tail (turns 215-219) doesn't mention migration city or file.\n\n    Final Answer: Seoul, src/runtime/init.ts",
+        "latencyMs": 16824,
+        "promptTokens": 2677,
+        "completionTokens": 408,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3417,
+        "retrieved": 2,
+        "content": "Seoul, src/runtime/init.ts",
+        "thinking": "The user wants to know the city and the file linked to the \"migration\".\n\n    *   `(seq 179) [fact-mhb-74] migration_file=src/runtime/init.ts`\n    *   `(seq 52) [fact-mha-74] migration_city=Seoul`\n    *   The conversation logs contain various \"prep\" notes (Quito, Riga, Seoul, Tokyo), but they don't explicitly link a migration file or city in the same way the memory store does.\n\n    *   `migration_file`: `src/runtime/init.ts`\n    *   `migration_city`: `Seoul`\n\nThe question asks for \"Which city and which file\".\n    *   City: Seoul\n    *   File: src/runtime/init.ts\n\n    *   JSON format: `{\"answer\": \"Seoul, src/runtime/init.ts\"}` or similar.\n    *   Wait, the prompt says \"Output the requested value verbatim in the answer field\".\n    *   The requested values are \"Seoul\" and \"src/runtime/init.ts\".\n\n    *   City: Seoul\n    *   File: src/runtime/init.ts\n    *   Combined: Seoul, src/runtime/init.ts",
+        "latencyMs": 13046,
+        "promptTokens": 2297,
+        "completionTokens": 305,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 24,
+          "finalContextTokens": 22006,
+          "remainingRawMessages": 32,
+          "summaryCount": 24
+        },
+        "retrieved": 2,
+        "ctxTokens": 3999,
+        "content": "Seoul, src/runtime/init.ts",
+        "thinking": "The user wants to know the city and the file linked to the migration.\n\n    *   `(seq 178) [fact-mhb-74] migration_file=src/runtime/init.ts`\n    *   `(seq 51) [fact-mha-74] migration_city=Seoul`\n\n    *   `(msg #179) [fact-mhb-74] migration_file=src/runtime/init.ts`\n    *   `(msg #52) [fact-mha-74] migration_city=Seoul`\n    *   `(summary) Summary (depth=0): [fact-mha-74] migration_city=Seoul`\n    *   `(summary) Summary (depth=0): [fact-mhb-74] migration_file=src/runtime/init.ts`\n\n    *   City: Seoul\n    *   File: src/runtime/init.ts\n\nThe question asks \"Which city and which file are linked to the migration?\".\nThe answer should be \"Seoul, src/runtime/init.ts\" or similar.\n\nLet's check for any more recent values.\n- `migration_file` is `src/runtime/init.ts` (seq 178).\n- `migration_city` is `Seoul` (seq 51).\nNo other values for these specific keys are provided in the context.\n\nFinal Answer: Seoul, src/runtime/init.ts.",
+        "latencyMs": 14993,
+        "promptTokens": 2716,
+        "completionTokens": 350,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "multihop-75",
+      "category": "multihop",
+      "question": "Which city and which file are linked to the migration?",
+      "idealAnswer": "Manila",
+      "modeA": {
+        "ctxTokens": 3416,
+        "content": "unknown",
+        "thinking": "The user wants to know which city and which file are linked to the \"migration\" based on the provided text.\n\n    *   [USER #373]: Topic: data. Notes: Lima prep. Color tag: ochre.\n    *   [ASSISTANT #374]: Topic: ops. Notes: Berlin prep. Color tag: rose.\n    *   [USER #375]: Topic: ml. Notes: Seoul prep. Color tag: rust.\n    *   [ASSISTANT #376]: Topic: billing. Notes: Quito prep. Color tag: amber.\n    *   [USER #377]: Topic: data. Notes: Cairo prep. Color tag: ivory.\n\n    *   I am looking for \"migration\" and a \"file\".\n    *   Scanning the text...\n    *   [USER #373]: \"Discussion turn 372 on topic data. Reviewing notes from Lima prep. Prior color tag: ochre. lorem ipsum...\"\n    *   [ASSISTANT #374]: \"Discussion turn 373 on topic ops. Reviewing notes from Berlin prep. Prior color tag: rose. lorem ipsum...\"\n    *   [USER #375]: \"Discussion turn 374 on topic ml. Reviewing notes from Seoul prep. Prior color tag: rust. lorem ipsum...\"\n    *   [ASSISTANT #376]: \"Discussion turn 375 on topic billing. Reviewing notes from Quito prep. Prior color tag: amber. lorem ipsum...\"\n    *   [USER #377]: \"Discussion turn 376 on topic data. Reviewing notes from Cairo prep. Prior color tag: ivory. lorem ipsum...\"\n\n    *   The word \"migration\" does not appear in the text.\n    *   The word \"file\" does not appear in the text.\n\n    *   Since the information is not present in the context, the answer should be \"unknown\".",
+        "latencyMs": 17517,
+        "promptTokens": 2235,
+        "completionTokens": 441,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 44,
+          "finalContextTokens": 22106,
+          "remainingRawMessages": 32,
+          "summaryCount": 44
+        },
+        "ctxTokens": 4000,
+        "content": "city: Manila, file: lib/auth/oauth-cb.go",
+        "thinking": "The user wants to know the city and the file linked to the migration based on the provided context.\n\n    *   `(msg #198) [fact-mhb-75] migration_file=lib/auth/oauth-cb.go`\n    *   `(msg #98) [fact-mha-75] migration_city=Manila`\n    *   `(summary) Summary (depth=0): [fact-mha-75] migration_city=Manila`\n    *   `(summary) Summary (depth=0): [fact-mhb-75] migration_file=lib/auth/oauth-cb.go`\n\n    *   Migration city: Manila\n    *   Migration file: lib/auth/oauth-cb.go\n\nThe question asks for \"Which city and which file are linked to the migration?\".\n\n    *   City: Manila\n    *   File: lib/auth/oauth-cb.go\n\n    Combine them into a string. \"Manila, lib/auth/oauth-cb.go\" or similar. The prompt asks for the requested value.\n\n    Let's check for any more recent values.\n    - msg #98: migration_city=Manila\n    - msg #198: migration_file=lib/auth/oauth-cb.go\n    - Summaries repeat these.\n    - Conversation tail (turns 372-376) mentions cities like Lima, Berlin, Seoul, Quito, Cairo, but these are \"Reviewing notes from [City] prep\", not \"migration_city\".\n\n    So the migration city is Manila and the migration file is lib/auth/oauth-cb.go.",
+        "latencyMs": 16668,
+        "promptTokens": 2677,
+        "completionTokens": 398,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3416,
+        "retrieved": 2,
+        "content": "Manila, lib/auth/oauth-cb.go",
+        "thinking": "The user wants to know the city and the file linked to the migration.\nI need to look at the provided memory records and conversation context.\n\nMemory records:\n- (seq 198) [fact-mhb-75] migration_file=lib/auth/oauth-cb.go\n- (seq 98) [fact-mha-75] migration_city=Manila\n\nConversation context:\n- [USER #373] ... Lima prep ...\n- [ASSISTANT #374] ... Berlin prep ...\n- [USER #375] ... Seoul prep ...\n- [ASSISTANT #376] ... Quito prep ...\n- [USER #377] ... Cairo prep ...\n\nThe memory records explicitly state:\n- `migration_file` = `lib/auth/oauth-cb.go`\n- `migration_city` = `Manila`\n\nThe conversation mentions other cities (Lima, Berlin, Seoul, Quito, Cairo) in the context of \"prep\", but not specifically linked to \"migration\" in the same way the memory records are.\n\nThe question asks for \"Which city and which file are linked to the migration?\".\nCity: Manila\nFile: lib/auth/oauth-cb.go\n\nCombine them into a string.",
+        "latencyMs": 13158,
+        "promptTokens": 2298,
+        "completionTokens": 306,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 44,
+          "finalContextTokens": 22106,
+          "remainingRawMessages": 32,
+          "summaryCount": 44
+        },
+        "retrieved": 2,
+        "ctxTokens": 3999,
+        "content": "Manila, lib/auth/oauth-cb.go",
+        "thinking": "The user wants to know the city and the file linked to the migration.\n\n    *   `[memory store top-2]`\n        *   `(seq 197) [fact-mhb-75] migration_file=lib/auth/oauth-cb.go`\n        *   `(seq 97) [fact-mha-75] migration_city=Manila`\n    *   `[lcm_grep results top-4]`\n        *   `(msg #198) [fact-mhb-75] migration_file=lib/auth/oauth-cb.go`\n        *   `(msg #98) [fact-mha-75] migration_city=Manila`\n        *   `(summary) Summary (depth=0): [fact-mha-75] migration_city=Manila`\n        *   `(summary) Summary (depth=0): [fact-mhb-75] migration_file=lib/auth/oauth-cb.go`\n    *   Other conversation turns (372, 373, 374, 375, 376, 377) mention various cities (Lima, Berlin, Seoul, Quito, Cairo) but they are linked to \"prep\" notes, not specifically \"migration_city\" or \"migration_file\" facts.\n\n    *   `migration_city` = Manila\n    *   `migration_file` = lib/auth/oauth-cb.go\n\nThe question asks for \"Which city and which file are linked to the migration?\".\n    *   City: Manila\n    *   File: lib/auth/oauth-cb.go\n\n    *   JSON object: `{\"answer\": \"Manila, lib/auth/oauth-cb.go\"}` or similar. Let's check if there's a specific format. The prompt says \"Return only the answer value as JSON\".\n\n    *   City: Manila\n    *   File: lib/auth/oauth-cb.go",
+        "latencyMs": 19151,
+        "promptTokens": 2722,
+        "completionTokens": 474,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "multihop-76",
+      "category": "multihop",
+      "question": "Which city and which file are linked to the migration?",
+      "idealAnswer": "Manila",
+      "modeA": {
+        "ctxTokens": 3416,
+        "content": "unknown",
+        "thinking": "The user wants to know which city and which file are linked to the \"migration\" based on the provided text.\n\n    *   [ASSISTANT #336]: Topic: ui, City: Manila, Color tag: rose.\n    *   [USER #337]: Topic: data, City: Dublin, Color tag: rust.\n    *   [ASSISTANT #338]: Topic: metrics, City: Berlin, Color tag: ochre.\n    *   [USER #339]: Topic: ml, City: Berlin, Color tag: cobalt.\n    *   [ASSISTANT #340]: Topic: data, City: Cairo, Color tag: sage.\n\n    *   I am searching for the word \"migration\" or any mention of a \"file\" linked to a \"migration\".\n    *   Scanning the text...\n    *   [ASSISTANT #336]: \"Discussion turn 335 on topic ui. Reviewing notes from Manila prep. Prior color tag: rose. lorem ipsum...\"\n    *   [USER #337]: \"Discussion turn 336 on topic data. Reviewing notes from Dublin prep. Prior color tag: rust. lorem ipsum...\"\n    *   [ASSISTANT #338]: \"Discussion turn 337 on topic metrics. Reviewing notes from Berlin prep. Prior color tag: ochre. lorem ipsum...\"\n    *   [USER #339]: \"Discussion turn 338 on topic ml. Reviewing notes from Berlin prep. Prior color tag: cobalt. lorem ipsum...\"\n    *   [ASSISTANT #340]: \"Discussion turn 339 on topic data. Reviewing notes from Cairo prep. Prior color tag: sage. lorem ipsum...\"\n\n    *   The word \"migration\" does not appear in the text.\n    *   The word \"file\" does not appear in the text.\n    *   The text consists of metadata (turn, topic, city prep, color tag) and \"lorem ipsum\" filler text.\n\nSince the information is not present in the context, the answer should be \"unknown\".",
+        "latencyMs": 18746,
+        "promptTokens": 2237,
+        "completionTokens": 477,
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 39,
+          "finalContextTokens": 22084,
+          "remainingRawMessages": 32,
+          "summaryCount": 39
+        },
+        "ctxTokens": 4000,
+        "content": "city=Manila, file=infra/k8s/clawbot.yaml",
+        "thinking": "The user wants to know the city and the file linked to the migration based on the provided context.\n\nLooking at the `lcm_grep` results:\n- `(msg #252) [fact-mhb-76] migration_file=infra/k8s/clawbot.yaml`\n- `(msg #75) [fact-mha-76] migration_city=Manila`\n- `(summary) Summary (depth=0): [fact-mha-76] migration_city=Manila`\n- `(summary) Summary (depth=0): [fact-mhb-76] migration_file=infra/k8s/clawbot.yaml`\n\nThe city is Manila and the file is infra/k8s/clawbot.yaml.",
+        "latencyMs": 10335,
+        "promptTokens": 2681,
+        "completionTokens": 207,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3416,
+        "retrieved": 2,
+        "content": "Manila, infra/k8s/clawbot.yaml",
+        "thinking": "The user wants to know the city and the file linked to the migration.\n\n    *   `(seq 252) [fact-mhb-76] migration_file=infra/k8s/clawbot.yaml`\n    *   `(seq 75) [fact-mha-76] migration_city=Manila`\n    *   Conversation turns:\n        *   Turn 335: Manila prep, color tag rose.\n        *   Turn 336: Dublin prep, color tag rust.\n        *   Turn 337: Berlin prep, color tag ochre.\n        *   Turn 338: Berlin prep, color tag cobalt.\n        *   Turn 339: Cairo prep, color tag sage.\n\n    *   `migration_file`: `infra/k8s/clawbot.yaml`\n    *   `migration_city`: `Manila`\n\nThe question asks for \"Which city and which file are linked to the migration?\".\nThe answer should be \"Manila, infra/k8s/clawbot.yaml\" or similar.\n\nLet's check for any updates in the conversation.\nThe conversation mentions \"Manila prep\", \"Dublin prep\", \"Berlin prep\", \"Cairo prep\". These are \"notes from [City] prep\", not necessarily \"migration_city\".\nThe memory store explicitly defines `migration_city=Manila` and `migration_file=infra/k8s/clawbot.yaml`.\n\nFinal Answer formulation: Manila, infra/k8s/clawbot.yaml.",
+        "latencyMs": 15369,
+        "promptTokens": 2301,
+        "completionTokens": 370,
+        "correct": true,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 39,
+          "finalContextTokens": 22084,
+          "remainingRawMessages": 32,
+          "summaryCount": 39
+        },
+        "retrieved": 2,
+        "ctxTokens": 3999,
+        "content": "",
+        "latencyMs": 107254,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "multihop-77",
+      "category": "multihop",
+      "question": "Which city and which file are linked to the migration?",
+      "idealAnswer": "Manila",
+      "modeA": {
+        "ctxTokens": 3416,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 26,
+          "finalContextTokens": 22020,
+          "remainingRawMessages": 32,
+          "summaryCount": 26
+        },
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3416,
+        "retrieved": 2,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 26,
+          "finalContextTokens": 22020,
+          "remainingRawMessages": 32,
+          "summaryCount": 26
+        },
+        "retrieved": 2,
+        "ctxTokens": 3999,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "multihop-78",
+      "category": "multihop",
+      "question": "Which city and which file are linked to the migration?",
+      "idealAnswer": "Berlin",
+      "modeA": {
+        "ctxTokens": 3415,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 30,
+          "finalContextTokens": 22036,
+          "remainingRawMessages": 32,
+          "summaryCount": 30
+        },
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3415,
+        "retrieved": 2,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 30,
+          "finalContextTokens": 22036,
+          "remainingRawMessages": 32,
+          "summaryCount": 30
+        },
+        "retrieved": 2,
+        "ctxTokens": 3999,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "multihop-79",
+      "category": "multihop",
+      "question": "Which city and which file are linked to the migration?",
+      "idealAnswer": "Oslo",
+      "modeA": {
+        "ctxTokens": 3416,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 33,
+          "finalContextTokens": 22056,
+          "remainingRawMessages": 32,
+          "summaryCount": 33
+        },
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 2,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3416,
+        "retrieved": 2,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 33,
+          "finalContextTokens": 22056,
+          "remainingRawMessages": 32,
+          "summaryCount": 33
+        },
+        "retrieved": 2,
+        "ctxTokens": 3999,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-80",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "lib/auth/oauth-cb.go:716:E6822:race_condition_in_resolveProvider",
+      "modeA": {
+        "ctxTokens": 3416,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 45,
+          "finalContextTokens": 22097,
+          "remainingRawMessages": 32,
+          "summaryCount": 45
+        },
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3416,
+        "retrieved": 0,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 45,
+          "finalContextTokens": 22097,
+          "remainingRawMessages": 32,
+          "summaryCount": 45
+        },
+        "retrieved": 0,
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-81",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "docs/operations/runbook.md:176:E2193:null_deref_in_assemble",
+      "modeA": {
+        "ctxTokens": 3416,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 40,
+          "finalContextTokens": 22068,
+          "remainingRawMessages": 32,
+          "summaryCount": 40
+        },
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3416,
+        "retrieved": 0,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 40,
+          "finalContextTokens": 22068,
+          "remainingRawMessages": 32,
+          "summaryCount": 40
+        },
+        "retrieved": 0,
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-82",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "docs/operations/runbook.md:810:E6661:race_condition_in_resolveProvider",
+      "modeA": {
+        "ctxTokens": 3416,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 46,
+          "finalContextTokens": 22099,
+          "remainingRawMessages": 32,
+          "summaryCount": 46
+        },
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 2,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3416,
+        "retrieved": 0,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 46,
+          "finalContextTokens": 22099,
+          "remainingRawMessages": 32,
+          "summaryCount": 46
+        },
+        "retrieved": 0,
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-83",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "tools/migrations/0042_add_fts5.sql:999:E1243:null_deref_in_assemble",
+      "modeA": {
+        "ctxTokens": 3415,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 26,
+          "finalContextTokens": 21995,
+          "remainingRawMessages": 32,
+          "summaryCount": 26
+        },
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3415,
+        "retrieved": 0,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 26,
+          "finalContextTokens": 21995,
+          "remainingRawMessages": 32,
+          "summaryCount": 26
+        },
+        "retrieved": 0,
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-84",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "src/runtime/init.ts:101:E5086:race_condition_in_resolveProvider",
+      "modeA": {
+        "ctxTokens": 3418,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 28,
+          "finalContextTokens": 22012,
+          "remainingRawMessages": 32,
+          "summaryCount": 28
+        },
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3418,
+        "retrieved": 0,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 28,
+          "finalContextTokens": 22012,
+          "remainingRawMessages": 32,
+          "summaryCount": 28
+        },
+        "retrieved": 0,
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-85",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "tools/migrations/0042_add_fts5.sql:889:E2577:null_deref_in_assemble",
+      "modeA": {
+        "ctxTokens": 3417,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 41,
+          "finalContextTokens": 22075,
+          "remainingRawMessages": 32,
+          "summaryCount": 41
+        },
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3417,
+        "retrieved": 0,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 41,
+          "finalContextTokens": 22075,
+          "remainingRawMessages": 32,
+          "summaryCount": 41
+        },
+        "retrieved": 0,
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 2,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-86",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "tools/migrations/0042_add_fts5.sql:58:E9431:panic_at_bootstrap",
+      "modeA": {
+        "ctxTokens": 3419,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 33,
+          "finalContextTokens": 22035,
+          "remainingRawMessages": 32,
+          "summaryCount": 33
+        },
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3419,
+        "retrieved": 0,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 33,
+          "finalContextTokens": 22035,
+          "remainingRawMessages": 32,
+          "summaryCount": 33
+        },
+        "retrieved": 0,
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-87",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "build/jenkins/Jenkinsfile:948:E8663:race_condition_in_resolveProvider",
+      "modeA": {
+        "ctxTokens": 3417,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 44,
+          "finalContextTokens": 22090,
+          "remainingRawMessages": 32,
+          "summaryCount": 44
+        },
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3417,
+        "retrieved": 0,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 44,
+          "finalContextTokens": 22090,
+          "remainingRawMessages": 32,
+          "summaryCount": 44
+        },
+        "retrieved": 0,
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-88",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "tools/migrations/0042_add_fts5.sql:609:E4267:memory_leak_in_summarize",
+      "modeA": {
+        "ctxTokens": 3418,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 24,
+          "finalContextTokens": 21987,
+          "remainingRawMessages": 32,
+          "summaryCount": 24
+        },
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3418,
+        "retrieved": 0,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 24,
+          "finalContextTokens": 21987,
+          "remainingRawMessages": 32,
+          "summaryCount": 24
+        },
+        "retrieved": 0,
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 2,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-89",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "tests/e2e/login.spec.ts:241:E2743:panic_at_bootstrap",
+      "modeA": {
+        "ctxTokens": 3415,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 44,
+          "finalContextTokens": 22077,
+          "remainingRawMessages": 32,
+          "summaryCount": 44
+        },
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3415,
+        "retrieved": 0,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 44,
+          "finalContextTokens": 22077,
+          "remainingRawMessages": 32,
+          "summaryCount": 44
+        },
+        "retrieved": 0,
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-90",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "frontend/src/app/Page.tsx:775:E5068:deadlock_on_session_lock",
+      "modeA": {
+        "ctxTokens": 3414,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 22,
+          "finalContextTokens": 21972,
+          "remainingRawMessages": 32,
+          "summaryCount": 22
+        },
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 2,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3414,
+        "retrieved": 0,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 22,
+          "finalContextTokens": 21972,
+          "remainingRawMessages": 32,
+          "summaryCount": 22
+        },
+        "retrieved": 0,
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 2,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-91",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "lib/auth/oauth-cb.go:991:E4802:null_deref_in_assemble",
+      "modeA": {
+        "ctxTokens": 3416,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 42,
+          "finalContextTokens": 22081,
+          "remainingRawMessages": 32,
+          "summaryCount": 42
+        },
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 2,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3416,
+        "retrieved": 0,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 42,
+          "finalContextTokens": 22081,
+          "remainingRawMessages": 32,
+          "summaryCount": 42
+        },
+        "retrieved": 0,
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 2,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-92",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "internal/queue/dispatch.py:432:E3010:race_condition_in_resolveProvider",
+      "modeA": {
+        "ctxTokens": 3416,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 30,
+          "finalContextTokens": 22019,
+          "remainingRawMessages": 32,
+          "summaryCount": 30
+        },
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 2,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3416,
+        "retrieved": 0,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 30,
+          "finalContextTokens": 22019,
+          "remainingRawMessages": 32,
+          "summaryCount": 30
+        },
+        "retrieved": 0,
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-93",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "frontend/src/app/Page.tsx:594:E2154:null_deref_in_assemble",
+      "modeA": {
+        "ctxTokens": 3416,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 22,
+          "finalContextTokens": 21978,
+          "remainingRawMessages": 32,
+          "summaryCount": 22
+        },
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3416,
+        "retrieved": 0,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 22,
+          "finalContextTokens": 21978,
+          "remainingRawMessages": 32,
+          "summaryCount": 22
+        },
+        "retrieved": 0,
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 2,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-94",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "infra/k8s/clawbot.yaml:351:E8128:null_deref_in_assemble",
+      "modeA": {
+        "ctxTokens": 3414,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 31,
+          "finalContextTokens": 22020,
+          "remainingRawMessages": 32,
+          "summaryCount": 31
+        },
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3414,
+        "retrieved": 0,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 31,
+          "finalContextTokens": 22020,
+          "remainingRawMessages": 32,
+          "summaryCount": 31
+        },
+        "retrieved": 0,
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-95",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "lib/auth/oauth-cb.go:316:E3066:memory_leak_in_summarize",
+      "modeA": {
+        "ctxTokens": 3419,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 45,
+          "finalContextTokens": 22097,
+          "remainingRawMessages": 32,
+          "summaryCount": 45
+        },
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 2,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3419,
+        "retrieved": 0,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 45,
+          "finalContextTokens": 22097,
+          "remainingRawMessages": 32,
+          "summaryCount": 45
+        },
+        "retrieved": 0,
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 2,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-96",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "lib/auth/oauth-cb.go:780:E1515:race_condition_in_resolveProvider",
+      "modeA": {
+        "ctxTokens": 3419,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 33,
+          "finalContextTokens": 22042,
+          "remainingRawMessages": 32,
+          "summaryCount": 33
+        },
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 2,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3419,
+        "retrieved": 0,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 33,
+          "finalContextTokens": 22042,
+          "remainingRawMessages": 32,
+          "summaryCount": 33
+        },
+        "retrieved": 0,
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-97",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "docs/operations/runbook.md:234:E6126:race_condition_in_resolveProvider",
+      "modeA": {
+        "ctxTokens": 3419,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 43,
+          "finalContextTokens": 22080,
+          "remainingRawMessages": 32,
+          "summaryCount": 43
+        },
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 3,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3419,
+        "retrieved": 0,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 43,
+          "finalContextTokens": 22080,
+          "remainingRawMessages": 32,
+          "summaryCount": 43
+        },
+        "retrieved": 0,
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-98",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "src/runtime/init.ts:648:E3497:panic_at_bootstrap",
+      "modeA": {
+        "ctxTokens": 3416,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 42,
+          "finalContextTokens": 22078,
+          "remainingRawMessages": 32,
+          "summaryCount": 42
+        },
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3416,
+        "retrieved": 0,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 42,
+          "finalContextTokens": 22078,
+          "remainingRawMessages": 32,
+          "summaryCount": 42
+        },
+        "retrieved": 0,
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 2,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-99",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "scripts/release-cut.sh:721:E8477:memory_leak_in_summarize",
+      "modeA": {
+        "ctxTokens": 3417,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 25,
+          "finalContextTokens": 21992,
+          "remainingRawMessages": 32,
+          "summaryCount": 25
+        },
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3417,
+        "retrieved": 0,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 25,
+          "finalContextTokens": 21992,
+          "remainingRawMessages": 32,
+          "summaryCount": 25
+        },
+        "retrieved": 0,
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-100",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "tools/migrations/0042_add_fts5.sql:865:E9275:panic_at_bootstrap",
+      "modeA": {
+        "ctxTokens": 3416,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 28,
+          "finalContextTokens": 22003,
+          "remainingRawMessages": 32,
+          "summaryCount": 28
+        },
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3416,
+        "retrieved": 0,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 28,
+          "finalContextTokens": 22003,
+          "remainingRawMessages": 32,
+          "summaryCount": 28
+        },
+        "retrieved": 0,
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-101",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "tests/e2e/login.spec.ts:175:E8275:deadlock_on_session_lock",
+      "modeA": {
+        "ctxTokens": 3416,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 24,
+          "finalContextTokens": 21989,
+          "remainingRawMessages": 32,
+          "summaryCount": 24
+        },
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3416,
+        "retrieved": 0,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 24,
+          "finalContextTokens": 21989,
+          "remainingRawMessages": 32,
+          "summaryCount": 24
+        },
+        "retrieved": 0,
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-102",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "frontend/src/app/Page.tsx:762:E1340:memory_leak_in_summarize",
+      "modeA": {
+        "ctxTokens": 3416,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 36,
+          "finalContextTokens": 22049,
+          "remainingRawMessages": 32,
+          "summaryCount": 36
+        },
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 2,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3416,
+        "retrieved": 0,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 36,
+          "finalContextTokens": 22049,
+          "remainingRawMessages": 32,
+          "summaryCount": 36
+        },
+        "retrieved": 0,
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 2,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-103",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "tools/migrations/0042_add_fts5.sql:162:E8615:panic_at_bootstrap",
+      "modeA": {
+        "ctxTokens": 3418,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 45,
+          "finalContextTokens": 22091,
+          "remainingRawMessages": 32,
+          "summaryCount": 45
+        },
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3418,
+        "retrieved": 0,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 45,
+          "finalContextTokens": 22091,
+          "remainingRawMessages": 32,
+          "summaryCount": 45
+        },
+        "retrieved": 0,
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-104",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "frontend/src/app/Page.tsx:335:E4208:race_condition_in_resolveProvider",
+      "modeA": {
+        "ctxTokens": 3417,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 46,
+          "finalContextTokens": 22099,
+          "remainingRawMessages": 32,
+          "summaryCount": 46
+        },
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3417,
+        "retrieved": 0,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 46,
+          "finalContextTokens": 22099,
+          "remainingRawMessages": 32,
+          "summaryCount": 46
+        },
+        "retrieved": 0,
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-105",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "infra/k8s/clawbot.yaml:172:E8838:null_deref_in_assemble",
+      "modeA": {
+        "ctxTokens": 3415,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 37,
+          "finalContextTokens": 22050,
+          "remainingRawMessages": 32,
+          "summaryCount": 37
+        },
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 2,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3415,
+        "retrieved": 0,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 37,
+          "finalContextTokens": 22050,
+          "remainingRawMessages": 32,
+          "summaryCount": 37
+        },
+        "retrieved": 0,
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-106",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "infra/k8s/clawbot.yaml:878:E7619:panic_at_bootstrap",
+      "modeA": {
+        "ctxTokens": 3415,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 38,
+          "finalContextTokens": 22054,
+          "remainingRawMessages": 32,
+          "summaryCount": 38
+        },
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3415,
+        "retrieved": 0,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 38,
+          "finalContextTokens": 22054,
+          "remainingRawMessages": 32,
+          "summaryCount": 38
+        },
+        "retrieved": 0,
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-107",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "tests/e2e/login.spec.ts:54:E2548:memory_leak_in_summarize",
+      "modeA": {
+        "ctxTokens": 3417,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 22,
+          "finalContextTokens": 21976,
+          "remainingRawMessages": 32,
+          "summaryCount": 22
+        },
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3417,
+        "retrieved": 0,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 22,
+          "finalContextTokens": 21976,
+          "remainingRawMessages": 32,
+          "summaryCount": 22
+        },
+        "retrieved": 0,
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-108",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "frontend/src/app/Page.tsx:253:E6481:race_condition_in_resolveProvider",
+      "modeA": {
+        "ctxTokens": 3417,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 39,
+          "finalContextTokens": 22065,
+          "remainingRawMessages": 32,
+          "summaryCount": 39
+        },
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3417,
+        "retrieved": 0,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 39,
+          "finalContextTokens": 22065,
+          "remainingRawMessages": 32,
+          "summaryCount": 39
+        },
+        "retrieved": 0,
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    },
+    {
+      "probeId": "verbatim-109",
+      "category": "verbatim",
+      "question": "Quote the exact error payload (file:line:errCode:reason) we recorded earlier in this thread.",
+      "idealAnswer": "scripts/release-cut.sh:713:E8740:race_condition_in_resolveProvider",
+      "modeA": {
+        "ctxTokens": 3417,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeB": {
+        "inst": {
+          "compactions": 23,
+          "finalContextTokens": 21983,
+          "remainingRawMessages": 32,
+          "summaryCount": 23
+        },
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 2,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeC": {
+        "ctxTokens": 3417,
+        "retrieved": 0,
+        "content": "",
+        "latencyMs": 0,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      },
+      "modeD": {
+        "inst": {
+          "compactions": 23,
+          "finalContextTokens": 21983,
+          "remainingRawMessages": 32,
+          "summaryCount": 23
+        },
+        "retrieved": 0,
+        "ctxTokens": 4000,
+        "content": "",
+        "latencyMs": 1,
+        "error": "fetch failed",
+        "correct": false,
+        "noiseLeak": false,
+        "staleLeak": false
+      }
+    }
+  ]
+}

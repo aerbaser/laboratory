@@ -1,0 +1,20 @@
+{
+  "title": "Lossless Claw A/B/C/D memory benchmark — Gemma full 110",
+  "date": "2026-04-29",
+  "category": "memory",
+  "slug": "lossless-claw-abcd-gemma-110",
+  "sourceRun": "/home/admin/.openclaw/workspace/agent-lab/runs/20260429-083054-lossless-claw-live-abcd",
+  "models": [
+    "gemma4-31b"
+  ],
+  "validity": [
+    "live-measured",
+    "harness-simulated"
+  ],
+  "artifacts": [
+    "artifacts/gemma-256-partial.json",
+    "artifacts/gemma-full-110-merged.json",
+    "artifacts/gemma-full-110-report.md",
+    "artifacts/live-raw-results.json"
+  ]
+}
