@@ -31,10 +31,13 @@ Scores with transport/runtime failures must not be interpreted as semantic wrong
 
 Gemma original full 110 was diagnostic because many correct values were emitted in `thinking` while final `content` was empty/truncated. Rescoring `content+thinking` gives:
 
-- A baseline: **7/110 = 6.4%**
-- B Lossless: **77/110 = 70.0%**
-- C simulated memory: **77/110 = 70.0%**
-- D combined: **76/110 = 69.1%**
+- A baseline: **7/110 measured = 6.4%**; **7/77 answered = 9.1%** (33 infra/runtime failed calls)
+- B Lossless: **77/110 measured = 70.0%**; **77/77 answered = 100%** (33 infra/runtime failed calls)
+- C simulated memory: **77/110 measured = 70.0%**; **77/77 answered = 100%** (33 infra/runtime failed calls)
+- D combined: **76/110 measured = 69.1%**; **76/76 answered = 100%** (34 infra/runtime failed calls)
+
+
+For the old Gemma full diagnostic run, the low `/110` values are dominated by runtime/output failures, not answered wrong values: B and C were **77/77 answered correctly**, D was **76/76 answered correctly**. The proper conclusion is therefore: Gemma's old full run was not a clean quality benchmark; it demonstrated retrieval quality on answered calls and exposed harness/runtime output fragility. The later Gemma production-path e2e (6/6 PASS) is the cleaner production-path evidence.
 
 Gemma answerfix smoke validated the fix (`ANSWER`/JSON content, larger output budget):
 - A baseline: **0/12 = 0.0%**
